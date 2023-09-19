@@ -1,6 +1,6 @@
 ---
 date: 2023-09-17
-title: Custom FFXI Looped Music Tutorial (2023)
+title: Custom FFXI Looped Music Tutorial (2023) v2
 weight: 10
 tags:
   - Final Fantasy XI
