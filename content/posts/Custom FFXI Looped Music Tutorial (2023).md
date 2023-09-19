@@ -52,6 +52,7 @@ If you have music you wish to have loop then we need to identify where we want t
 You will need a program that can load your .WAV file and display the currently selected position in a track as a sample number. Most audio editing programs can do this (including [Audacity (Free!)](https://www.audacityteam.org) and [RX Audio Editor (Expensive!)](https://www.izotope.com/en/rx.html)) Here's an image below of what I mean:
 
 ![Scrubbings](images/SamplesScrubbingRX.png)
+![Nocturne Logo](images/NocturneLogo.png)
 
 Find your loop point for the song, note down the sample number, then divide this number by 16. Round this number to the nearest whole number then convert it to 5 digit hexadecimal [here.](https://www.rapidtables.com/convert/number/decimal-to-hex.html)
 
