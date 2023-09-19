@@ -15,7 +15,7 @@
               "state": {
                 "file": "posts/Custom FFXI Looped Music Tutorial 2023/_index.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -146,8 +146,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a3dfb3b37f29df88",
+  "active": "70f51fd5a74fe013",
   "lastOpenFiles": [
+    "posts/Custom FFXI Looped Music Tutorial 2023/XiMCScreenshotEnglish.png",
     "posts/Custom FFXI Looped Music Tutorial 2023/SamplesScrubbingRX.png",
     "posts/Custom FFXI Looped Music Tutorial 2023/_index.md",
     "posts/Custom FFXI Looped Music Tutorial 2023",
