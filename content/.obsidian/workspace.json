@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Contact.md",
+                "file": "posts/Custom FFXI Looped Music Tutorial 2023/_index.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Contact.md",
+                "file": "posts/Custom FFXI Looped Music Tutorial 2023/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Contact.md",
+                "file": "posts/Custom FFXI Looped Music Tutorial 2023/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Contact.md"
+                "file": "posts/Custom FFXI Looped Music Tutorial 2023/_index.md"
               }
             }
           }
@@ -146,12 +146,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a3dfb3b37f29df88",
+  "active": "70f51fd5a74fe013",
   "lastOpenFiles": [
-    "posts/SamplesScrubbingRX.png",
     "posts/Custom FFXI Looped Music Tutorial (2023).md",
+    "Contact.md",
+    "posts/SamplesScrubbingRX.png",
     "posts/XiMCScreenshotEnglish.png",
-    "posts/Custom FFXI Looped Music Tutorial 2023/Custom FFXI Looped Music Tutorial (2023).md",
+    "posts/Custom FFXI Looped Music Tutorial 2023/_index.md",
     "posts/_index.md",
     "posts/Custom FFXI Looped Music Tutorial 2023/SamplesScrubbingRX.png",
     "posts/Custom FFXI Looped Music Tutorial 2023/XiMCScreenshotEnglish.png",
@@ -159,7 +160,6 @@
     "_index.md",
     "docs/Projects/Podcasts/Tales of Nocturne.md",
     "_index 2.md",
-    "Contact.md",
     "docs/Projects/hidden.md",
     "Untitled.canvas",
     "docs/Projects/Music/_index.md",
