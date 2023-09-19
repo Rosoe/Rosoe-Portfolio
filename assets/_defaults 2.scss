@@ -1,0 +1,68 @@
+// Used in layout
+$padding-1: 1px !default;
+$padding-4: 0.25rem !default;
+$padding-8: 0.5rem !default;
+$padding-16: 1rem !default;
+
+$font-size-base: 16px !default;
+$font-size-12: 0.75rem !default;
+$font-size-14: 0.875rem !default;
+$font-size-16: 1rem !default;
+
+$border-radius: $padding-4 !default;
+
+$body-font-weight: normal !default;
+
+$body-min-width: 20rem !default;
+$container-max-width: 80rem !default;
+
+$header-height: 3.5rem !default;
+$menu-width: 16rem !default;
+$toc-width: 16rem !default;
+
+$mobile-breakpoint: $menu-width + $body-min-width * 1.2 + $toc-width !default;
+
+$hint-colors: (
+  info: #6bf,
+  warning: #fd6,
+  danger: #f66,
+) !default;
+
+// Themes
+@mixin theme-light {
+  --gray-100: #1D242A; //Search Colour BG
+  --gray-200: #12161A;
+  --gray-500: Black;
+
+  --color-link: #82D8FF; //Tags, ToC Links
+  --color-visited-link: #0085FF; // Page title
+
+  --body-background: #12161A;
+  --body-font-color: #E4E4E4;
+
+   --icon-filter: brightness(0) invert(1);
+
+  --hint-color-info: #6bf;
+  --hint-color-warning: #fd6;
+  --hint-color-danger: #f66;
+}
+
+@mixin theme-light {
+  --gray-100: #1D242A; //Search Colour BG
+  --gray-200: #111111;
+  --gray-500: Black;
+
+  --color-link: #82D8FF; //Tags, ToC Links
+  --color-visited-link: #0085FF; // Page title
+
+  --body-background: #12161A;
+  --body-font-color: #E4E4E4;
+
+   --icon-filter: brightness(0) invert(1);
+
+  --hint-color-info: #6bf;
+  --hint-color-warning: #fd6;
+  --hint-color-danger: #f66;
+}
+
+
