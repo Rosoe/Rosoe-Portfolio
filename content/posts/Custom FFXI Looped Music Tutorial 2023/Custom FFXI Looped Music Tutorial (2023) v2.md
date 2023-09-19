@@ -1,11 +1,15 @@
 ---
-date: 2023-09-17
+date: 2023-09-18
 title: Custom FFXI Looped Music Tutorial (2023) v2
 weight: 10
 tags:
-  - Final Fantasy XI
-  - Music Production
-  - BGW Files
+  - Final
+  - Fantasy
+  - XI
+  - Music
+  - Production
+  - BGW
+  - Files
 ---
 Don't worry. I understand this might be one of the most unpopular blog posts of 2023. I hope you know not the plight of researching a detailed niche on the internet, having that search result in a mere handful of cobwebbed post on long forgotten forums, then having to piece together these broken hieroglyphs of information into a rough translation of what it means to do what they did in 2006, then assess how you might do the same in 2023.
 
