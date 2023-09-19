@@ -51,7 +51,7 @@ If you have music you wish to have loop then we need to identify where we want t
 
 You will need a program that can load your .WAV file and display the currently selected position in a track as a sample number. Most audio editing programs can do this (including [Audacity (Free!)](https://www.audacityteam.org) and [RX Audio Editor (Expensive!)](https://www.izotope.com/en/rx.html)) Here's an image below of what I mean:
 
-![Scrubbings](/images/SamplesScrubbingRX.png)
+![Scrubbings](images/SamplesScrubbingRX.png)
 
 Find your loop point for the song, note down the sample number, then divide this number by 16. Round this number to the nearest whole number then convert it to 5 digit hexadecimal [here.](https://www.rapidtables.com/convert/number/decimal-to-hex.html)
 
@@ -68,7 +68,7 @@ XiMC (Final Fantasy XI Music Converter) is a program someone made in the 2000s. 
 
 So, open XiMC and you will be greeted with a mix of Japanese and broken unicode if you're on a non-Japanese based Windows install. Never fear though, I made a bad english translation on a screenshot for you to reference:
 
-![XiMC Screenie](/images/XiMCScreenshotEnglish.png)
+![XiMC Screenie](images/XiMCScreenshotEnglish.png)
 
 From here the process is simple:
 1. From the right hand menu, choose the song you wish to replace with your custom music.
