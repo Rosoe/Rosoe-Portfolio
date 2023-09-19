@@ -1,0 +1,7 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = '''It's Ro'sø!'''
+BookTheme = 'dark'
+
+[markup.goldmark.renderer]
+unsafe = true

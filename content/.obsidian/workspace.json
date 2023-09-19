@@ -1,0 +1,179 @@
+{
+  "main": {
+    "id": "89f9e2f5d812489a",
+    "type": "split",
+    "children": [
+      {
+        "id": "214f3ddeb3252c4a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "70f51fd5a74fe013",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_index.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8a7e949d3a39bb76",
+    "type": "split",
+    "children": [
+      {
+        "id": "e3ddc2fc0ca23f6e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a3dfb3b37f29df88",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8e528614519bfd3d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6641f013795a7fd5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "03e542456c5c2bc2",
+    "type": "split",
+    "children": [
+      {
+        "id": "be0276d4bd9a426b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "175423ce899e7ae8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c50cf30760b7d9f8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "14669df5c4a87672",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c948b3d8a18295d9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_index.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "70f51fd5a74fe013",
+  "lastOpenFiles": [
+    "posts/Custom FFXI Looped Music Tutorial (2023).md",
+    "_index.md",
+    "Contact.md",
+    "docs/Projects/hidden.md",
+    "Untitled.canvas",
+    "docs/Projects/Music/_index.md",
+    "docs/Projects/Podcasts/_index.md",
+    "docs/Projects/_index.md",
+    "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン.md",
+    "docs/Projects/Music/Melodies of Nocturne.md",
+    "posts/SamplesScrubbingRX.png",
+    "SamplesScrubbingRX.png",
+    "docs/Projects/Podcasts/Tales of Nocturne.md",
+    "posts/_index.md",
+    "posts/migrate-from-jekyll.md",
+    "menu/indexxx.md",
+    "docs/shortcodes/mermaid.md",
+    "docs/shortcodes/katex.md",
+    "docs/shortcodes/section/second-page.md",
+    "docs/shortcodes/section/first-page.md",
+    "docs/shortcodes/section/_index.md",
+    "docs/shortcodes/_index.md",
+    "docs/Projects/Music/Producer/_index.md",
+    "docs/Projects/Music/Composer/_index.md",
+    "docs/Projects/Untitled",
+    "docs/Projects/Podcasts/without-toc.md",
+    "docs/Projects/Music/Composer"
+  ]
+}
