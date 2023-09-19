@@ -2,7 +2,7 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = '''It's Ro'sø!'''
 BookTheme = 'dark'
-tßheme = 'hugo-book'
+theme = 'hugo-book'
 
 [markup.goldmark.renderer]
 unsafe = true
