@@ -7,7 +7,7 @@ tags:
   - Music Production
   - BGW Files
 ---
-Don't worry. I understand this might be one of the most unpopular blog posts of 2023. I hope you know not the plight of researching a detailed niche on the internet, having that search result in a mere handful of cobwebbed post on long forgotten forums, then having to piece together these broken hieroglyphs of information into a rough translation of what it means to do what they did in 2006, then assess how you might do the same but in 2023.
+Don't worry. I understand this might be one of the most unpopular blog posts of 2023. I hope you know not the plight of researching a detailed niche on the internet, having that search result in a mere handful of cobwebbed post on long forgotten forums, then having to piece together these broken hieroglyphs of information into a rough translation of what it means to do what they did in 2006, then assess how you might do the same in 2023.
 
 ## Welcome to My Mordion Gaol
 This was my challenge when producing music for the HorizonXI FFXI Private Server.[^1] We sourced [^2] and produced a bunch of remakes for old tracks but we were just renaming the extensions for our .WAV files to FFXI's proprietary .BGW format. This works but has some issues:
