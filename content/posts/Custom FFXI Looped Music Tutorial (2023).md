@@ -53,6 +53,7 @@ You will need a program that can load your .WAV file and display the currently s
 
 ![Scrubbings](/images/SamplesScrubbingRX.png)
 ![Nocturne Logo](static/images/NocturneLogo.png)
+![Nocturne Logo](/static/images/NocturneLogo.png)
 
 Find your loop point for the song, note down the sample number, then divide this number by 16. Round this number to the nearest whole number then convert it to 5 digit hexadecimal [here.](https://www.rapidtables.com/convert/number/decimal-to-hex.html)
 
