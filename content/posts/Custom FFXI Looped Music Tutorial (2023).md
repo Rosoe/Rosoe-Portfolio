@@ -119,5 +119,5 @@ Let me know how it goes in the comments below and I might be able to help and I 
 # Comments
 Note: I have an issue with the log in ferature of my comments. If you wish to log in with your matrix account then press the button and scroll up the page to find the dialogue box. Sorry!
 
-{{< chat Custom-FFXI-Looped-Music-Tutorial-(2023) >}}
+{{< chat Custom-FFXI-Looped-Music-Tutorial-2023 >}}
 
