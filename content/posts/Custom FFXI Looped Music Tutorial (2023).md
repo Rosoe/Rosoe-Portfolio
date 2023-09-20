@@ -51,7 +51,7 @@ If you have music you wish to have loop then we need to identify where we want t
 
 You will need a program that can load your .WAV file and display the currently selected position in a track as a sample number. Most audio editing programs can do this (including [Audacity (Free!)](https://www.audacityteam.org) and [RX Audio Editor (Expensive!)](https://www.izotope.com/en/rx.html)) Here's an image below of what I mean:
 
-<img src="/static/images/SamplesScrubbingRX.png" alt="Scrubbings">
+<img src="/static/images/SamplesScrubbingRX.png" alt="Scrubbings"/>
 
 ![Scrubbings](SamplesScrubbingRX.png)
 
