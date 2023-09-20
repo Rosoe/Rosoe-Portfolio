@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Custom FFXI Looped Music Tutorial (2023).md",
+                "file": "posts/Custom Looped Music tutorial (2023) v2/index.md",
                 "mode": "source",
                 "source": true
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "03e542456c5c2bc2",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Custom FFXI Looped Music Tutorial (2023).md",
+                "file": "posts/Custom Looped Music tutorial (2023) v2/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Custom FFXI Looped Music Tutorial (2023).md",
+                "file": "posts/Custom Looped Music tutorial (2023) v2/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Custom FFXI Looped Music Tutorial (2023).md"
+                "file": "posts/Custom Looped Music tutorial (2023) v2/index.md"
               }
             }
           }
@@ -149,8 +148,8 @@
   },
   "active": "70f51fd5a74fe013",
   "lastOpenFiles": [
-    "posts/Custom Looped Music tutorial (2023) v2/Custom FFXI Looped Music Tutorial (2023) v2.md",
     "posts/Custom FFXI Looped Music Tutorial (2023).md",
+    "posts/Custom Looped Music tutorial (2023) v2/index.md",
     "posts/Custom Looped Music tutorial (2023) v2/XiMCScreenshotEnglish.png",
     "posts/Custom Looped Music tutorial (2023) v2/SamplesScrubbingRX.png",
     "posts/Custom Looped Music tutorial (2023) v2/Custom FFXI Looped Music Tutorial (2023).md",
