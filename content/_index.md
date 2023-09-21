@@ -20,12 +20,13 @@ If you're here to hire me, click the contact menu option for all the ways to rea
 {{< columns >}} <!-- begin columns block -->
 
 ## Tales of Nocturne 
+*New Episodes Every Full Moon(ish)*
 
 
 <---> <!-- magic separator, between columns -->
 
 ## Memories of Aht Urghan
-
+*Release Date: TBA*
 
 {{< /columns >}}
 
