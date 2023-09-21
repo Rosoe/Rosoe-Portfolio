@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Custom Looped Music tutorial (2023) v2/index.md",
+                "file": "_index.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Custom Looped Music tutorial (2023) v2/index.md",
+                "file": "_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Custom Looped Music tutorial (2023) v2/index.md",
+                "file": "_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Custom Looped Music tutorial (2023) v2/index.md"
+                "file": "_index.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "70f51fd5a74fe013",
   "lastOpenFiles": [
-    "posts/Custom FFXI Looped Music Tutorial (2023).md",
     "posts/Custom Looped Music tutorial (2023) v2/index.md",
+    "posts/Custom FFXI Looped Music Tutorial (2023).md",
     "posts/XiMCScreenshotEnglish.png",
     "posts/SamplesScrubbingRX.png",
     "posts/Custom Looped Music tutorial (2023) v2/XiMCScreenshotEnglish.png",
