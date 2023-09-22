@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_index.md",
+                "file": "posts/Custom Looped Music tutorial (2023) v2/index.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_index.md",
+                "file": "posts/Custom Looped Music tutorial (2023) v2/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_index.md",
+                "file": "posts/Custom Looped Music tutorial (2023) v2/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_index.md"
+                "file": "posts/Custom Looped Music tutorial (2023) v2/index.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "70f51fd5a74fe013",
   "lastOpenFiles": [
+    "_index.md",
     "posts/Custom Looped Music tutorial (2023) v2/index.md",
     "posts/Custom FFXI Looped Music Tutorial (2023).md",
     "posts/XiMCScreenshotEnglish.png",
@@ -167,7 +168,6 @@
     "posts/Custom FFXI Looped Music Tutorial 2023/SamplesScrubbingRX.png",
     "posts/Custom FFXI Looped Music Tutorial 2023/XiMCScreenshotEnglish.png",
     "posts/Custom FFXI Looped Music Tutorial 2023",
-    "_index.md",
     "docs/Projects/Podcasts/Tales of Nocturne.md",
     "_index 2.md",
     "docs/Projects/hidden.md",
