@@ -25,7 +25,7 @@ If you're here to hire me, click the contact menu option for all the ways to rea
 
 <---> <!-- magic separator, between columns -->
 
-## Memories of Aht Urghan
+## [Memories of Aht Urghan](docs/projects/music/final-fantasy-xi-memories-of-aht-urghan懐かしい記憶のアトルガン/)
 *Release Date: TBA*
 
 {{< /columns >}}
