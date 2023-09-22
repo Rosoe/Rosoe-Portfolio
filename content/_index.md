@@ -9,7 +9,7 @@ menu:
 
 # Hey there! Velkommen!
 
-I'm Ro'sø. I'm a Denmark-based Brit who make music, stories, and audio experiences. Welcome to my profile and thought vault! You can check out my most recent work below and all my projects in the menu to the left. 
+I'm Ro'sø. I'm a Denmark-based Brit who makes music, stories, and audio experiences. Welcome to my profile and thought vault! You can check out my most recent work below and all my projects in the menu to the left. 
 
 If you're here to hire me, click the contact menu option for all the ways to reach me and pick your favourite. If you just want to say hi the contact tab still works for this too!
 
