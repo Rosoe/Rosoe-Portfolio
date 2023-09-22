@@ -15,4 +15,4 @@ In early 2023 I was offered the chance to remake FFXI's [Treasures of Aht Urghan
 I've made a post describing my intentions behind this work and some of the thoughts that went into producing it. [Take a look at it here.]
 
 ## Comments
-{{< chat Custom-MemoriesOfAhtUrghanAlbum >}}
+<div> {{< chat Custom-MemoriesOfAhtUrghanAlbum >}} </div>
