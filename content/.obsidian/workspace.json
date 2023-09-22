@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Contact.md",
+                "file": "docs/Projects/Podcasts/Tales of Nocturne/index.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 349.5
   },
   "right": {
     "id": "03e542456c5c2bc2",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Contact.md",
+                "file": "docs/Projects/Podcasts/Tales of Nocturne/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Contact.md",
+                "file": "docs/Projects/Podcasts/Tales of Nocturne/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Contact.md"
+                "file": "docs/Projects/Podcasts/Tales of Nocturne/index.md"
               }
             }
           }
@@ -148,8 +148,12 @@
   },
   "active": "70f51fd5a74fe013",
   "lastOpenFiles": [
-    "menu/indexxx.md",
+    "docs/Projects/Podcasts/Tales of Nocturne/TalesOfNocturneShowArt.png",
+    "docs/Projects/Podcasts/Tales of Nocturne/index.md",
+    "docs/Projects/Podcasts/Tales of Nocturne",
+    "docs/Projects/Podcasts/_index.md",
     "Contact.md",
+    "menu/indexxx.md",
     "docs/Projects/hidden.md",
     "_index.md",
     "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
@@ -159,7 +163,6 @@
     "images",
     "docs/Projects/Music/Melodies of Nocturne.md",
     "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン",
-    "docs/Projects/Podcasts/Tales of Nocturne.md",
     "posts/_index.md",
     "posts/Memories of Aht Urghan Production Process",
     "posts/Custom Looped Music tutorial (2023) v2/index.md",
@@ -182,9 +185,7 @@
     "_index 2.md",
     "Untitled.canvas",
     "docs/Projects/Music/_index.md",
-    "docs/Projects/Podcasts/_index.md",
     "docs/Projects/_index.md",
-    "SamplesScrubbingRX.png",
     "posts/migrate-from-jekyll.md",
     "docs/shortcodes/mermaid.md",
     "docs/shortcodes/katex.md",
