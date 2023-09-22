@@ -6,11 +6,11 @@ weight: 1
 
 _Night Time Fantasy Fiction Podcast. [New Episodes Every Full-Moon(ish)](https://www.rmg.co.uk/stories/topics/full-moon-calendar)._   
 ## Summary
-I use podcasts to help me fall asleep. This works well for me but often there is loud music, adverts, or even just sensitive topics that can keep me awake. I had also tried dedicated sleep podcasts but found the content too disinteresting to habitually listen to. So I made _Tales of Nocturne_ to ride the line between sleep-enabling and engaging.
+A Lunar Priest tired of being alone, an inventor following a new thread of songlight investigation, and a Mycologist caught up in the politics of The Midnight City's most ramshackle research institute. Tales of Nocturne follows the lives of those who liv eon Nocturne - the planet of eternal night surround by magical moons that waltz across the sky. 
 
-Our stories follow the lives of those who live on Nocturne, the planet of eternal night surrounded by a multitude of magical waltzing moons. Within the Midnight City and without in the Farwilds, we discover the rites of the Lunar Priests with Neven; the secrets of Songlight with Yuki and her lab; the inner workings of the Historians Guild; and the eccentric and erratic researchers of the Society Royal. 
+Tales of Nocturne is a night-time fiction podcast - a podcast design to help one fall asleep. Engaging enough to tune in but just gentle enough to lull one to sleep. If you're an anxious sleeper who listens to podcasts before bed then I encourage you to give it a try. Relax as we explore their world so we can help you rest in yours. 
 
-So relax as they explore their world and let you rest in yours. Sweet dreams. 🌕
+Sweet dreams. 🌕
 
 ## Show Art
 [Podcast Art](TaleOfNocturneShowArt)
