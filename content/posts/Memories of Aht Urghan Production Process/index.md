@@ -1,5 +1,5 @@
 ---
-Status: draft
+Draft: True
 ---
 # The Production Process
 For those FFXI fans who want to know more about how the remake album was made then read on. 
