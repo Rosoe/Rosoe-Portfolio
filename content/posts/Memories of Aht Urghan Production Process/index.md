@@ -27,9 +27,9 @@ Examining the tracks this way, each present its own special little combination o
 ### Bustle of the Capital ⭐️⭐️⭐️⭐️
 [This is an iconic track from the original OST.](https://www.youtube.com/watch?v=na5lAIJ2CHI) It might also be the most listened to in game as it is the background music for all of Al Zhabi - the city hub most players would hang around in for the ToAU expansion. The vibe of the track is engaging but not intense. It evokes ideas of walking through market stalls and exploring a new city. 
 
-Quality wise, this is a 4-star track. The composition is perfect for the space but the main instrument - ostensibly a [Shehnai](https://en.wikipedia.org/wiki/Shehnai)[^1] - has some production issues. In particular a very annoying clicking sound at the start of every note. It also has a very distinctive sound quality that will be hard to replicate - in particular its bending and sluring into various notes.
+Quality wise, this is a 4-star track. The composition is perfect for the space but the main instrument - ostensibly a [Shehnai](https://en.wikipedia.org/wiki/Shehnai)[^1] - has some production issues. In particular a very annoying clicking sound at the start of every note. It also has a very distinctive sound quality that will be hard to replicate - in particular its bending and slurring into various notes.
 
-[^1]: Well, the instrument tries to be a Shenai but is actually a 2001 Uillean Pipes sample from [Quantum Leap](https://ec.crypton.co.jp/product/detail/20330). This 2001 sample is now available in [EastWest's RA](https://www.soundsonline.com/world-and-traditional/ra) VST Instrument for $299 (along with a bunch of other 20+ year old samples) and sounds just as bad now as it did then. A sober reminder to always try before you buy. 
+[^1]: Well, the instrument tries to be a Shehnai but is actually a 2001 Uillean Pipes sample from [Quantum Leap](https://ec.crypton.co.jp/product/detail/20330). This 2001 sample is now available in [EastWest's RA](https://www.soundsonline.com/world-and-traditional/ra) VST Instrument for $299 (along with a bunch of other 20+ year old samples) and sounds just as bad now as it did then. A sober reminder to always try before you buy. 
 
 ### Eastward Bound ⭐️⭐️⭐️⭐️
 Another great track. In game you're on a boat travelling to a far-away land and most likely for the first time since most players would make use of fast travel options to avoid the 15 minute boat ride. To me it inspires ideas of new beginnings, journeys ventured, and that feel of the wind and spray whipping against ones skin. It's filled with simmering excitement and punctuated by moments of wonder at ones new envrions. 
@@ -39,23 +39,37 @@ Production-wise, most of the elements here are quite standard. The lead synth pr
 ### Bandit's Market ⭐️⭐️
 I do not enjoy this track. The D section wit the flutes and strings is nice but I just don't like how the rest of this sounds. Problem is, this is an iconic track in a city area that people spend a lot of time in. It also has elements that I don't think I could easily replace so my ability to add and modify this track felt limited. In the end, I decided to leave it mostly as is and respect those who do enjoy this track (of which there are at least 4 according to YouTube's comments.)
 
-### Illusions In The Mist
-### Mercenaries Delight
-### Jewelled Boughs
-### Ululations From Beyond
-### Rapid Onslaught
-### Fated Strife
-### Delve
-### Whispers of the Gods
-### The Black Coffin
-### A Puppet's Slumber
-### Ever-Turning Wheels
-### Hellriders
-### Eternal Gravestone
-### Vana'diel March #4
-### Iron Colossus
-### Ragnarok
-### An Invisible Crown
+### Illusions In The Mist ⭐️⭐️⭐️
+### Mercenaries Delight ⭐️⭐️⭐️⭐️
+### Jewelled Boughs ⭐️⭐️⭐️⭐️⭐️
+### Ululations From Beyond ⭐️⭐️⭐️⭐️
+I always think of this and Illusions in the Mist as a pair. They both have vary similar vibes, a sparse and open arrangement with lots space for reverb and effects to add colour to the piece. I do like Ululations a little bit more though. 
+
+### Fated Strife ⭐️⭐️⭐️
+### Delve ⭐️⭐️⭐️⭐️
+Really lovely battle theme. The original is actually very retrained in its orchestration and is super fitting for an underground, more lonesome battle theme.
+
+### Whispers of the Gods ⭐️⭐️⭐️⭐️
+### The Black Coffin ⭐️⭐️⭐️⭐️
+
+
+### A Puppet's Slumber ⭐️⭐️⭐️
+### Ever-Turning Wheels ⭐️⭐️⭐️
+### Hellriders ⭐️
+This is perhaps one of the worst songs on the original OST. It has potential but doesn't really go anywhere. The A section starts out bombastic but veers into comedic due to its length. The B section is too simple for the production techniques available to Naoshi, so it never generates enough interest. 
+
+The track is also not a fan favourite, so I identified this as one I could take a lot of artistic license with if needed.
+
+### Eternal Gravestone ⭐️⭐️
+Of the three cutscene pieces I think this is my least favourite. The other two nail their vibes really well and have really nice melodic turns in them. This doesn't really have that
+
+### Vana'diel March #4 ⭐️⭐️⭐️
+### Iron Colossus ⭐️⭐️⭐️⭐️
+### Ragnarok ⭐️⭐️⭐️⭐️
+### An Invisible Crown ⭐️⭐️⭐️⭐️
 
 ## Initial Demos and Issues
 1. New world instruments. Very difficult to replicate.
+
+
+{{< chat Custom-MemoriesOfAhtUrghanAlbum >}}
