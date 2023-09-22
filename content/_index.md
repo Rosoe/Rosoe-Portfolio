@@ -19,7 +19,7 @@ If you're here to hire me, click the contact menu option for all the ways to rea
 
 {{< columns >}} <!-- begin columns block -->
 
-## [Tales of Nocturne](projects/podcasts/Tales-Of-Nocturne/index.html) 
+## [Tales of Nocturne](docs/projects/podcasts/tales-of-nocturne/) 
 *New Episodes Every Full Moon(ish)*
 
 
