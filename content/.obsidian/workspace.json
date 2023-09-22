@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_index.md",
+                "file": "docs/Projects/Podcasts/Tales of Nocturne/index.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_index.md",
+                "file": "docs/Projects/Podcasts/Tales of Nocturne/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_index.md",
+                "file": "docs/Projects/Podcasts/Tales of Nocturne/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_index.md"
+                "file": "docs/Projects/Podcasts/Tales of Nocturne/index.md"
               }
             }
           }
@@ -148,16 +148,16 @@
   },
   "active": "70f51fd5a74fe013",
   "lastOpenFiles": [
-    "docs/Projects/Podcasts/Tales of Nocturne/index.md",
-    "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
-    "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/MoAU-Album-Art.png",
     "docs/Projects/Podcasts/Tales of Nocturne/TalesOfNocturneShowArt.png",
+    "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
+    "docs/Projects/Podcasts/Tales of Nocturne/index.md",
+    "_index.md",
+    "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/MoAU-Album-Art.png",
     "docs/Projects/Podcasts/Tales of Nocturne",
     "docs/Projects/Podcasts/_index.md",
     "Contact.md",
     "menu/indexxx.md",
     "docs/Projects/hidden.md",
-    "_index.md",
     "posts/Memories of Aht Urghan Production Process/index.md",
     "images/ToAUOST.png.md",
     "images",
