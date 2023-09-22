@@ -7,13 +7,11 @@ menu:
     weight: 1
 ---
 
-# Well Hello There...
+# Hey there!
 
-Good to greet you. I'm Ro'sø. I make music, stories, and audio experiences. Welcome to my profile, portfolio, dashboard, and thought vault. 
+I'm Ro'sø. I'm a Denmark-based Brit who make music, stories, and audio experiences. Welcome to my profile and thought vault! You can check out my most recent work below and all my projects in the menu to the left. 
 
-You can check out my most recent work below, all my projects in the menu to the left, and helpful posts, thoughts and updates in the blog section.
-
-If you're here to hire me, click the contact menu option for all the ways to reach me and pick your favourite.
+If you're here to hire me, click the contact menu option for all the ways to reach me and pick your favourite. If you just want to say hi the contact tab still works for this too!
 
 # Latest Projects 
 
