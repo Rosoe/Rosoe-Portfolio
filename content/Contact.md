@@ -3,7 +3,7 @@ title: Contact
 type: docs
 menu:
   before:
-    name: Contact Me
+    name: Contact
     weight: 2
 ---
 # Contact
