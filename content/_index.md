@@ -7,7 +7,7 @@ menu:
     weight: 1
 ---
 
-# Hey there!
+# Hey there! Velkommen!
 
 I'm Ro'sø. I'm a Denmark-based Brit who make music, stories, and audio experiences. Welcome to my profile and thought vault! You can check out my most recent work below and all my projects in the menu to the left. 
 
