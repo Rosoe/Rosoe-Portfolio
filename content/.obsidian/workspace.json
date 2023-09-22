@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Custom Looped Music tutorial (2023) v2/index.md",
+                "file": "_index.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/Custom Looped Music tutorial (2023) v2/index.md",
+                "file": "_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/Custom Looped Music tutorial (2023) v2/index.md",
+                "file": "_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/Custom Looped Music tutorial (2023) v2/index.md"
+                "file": "_index.md"
               }
             }
           }
@@ -148,7 +148,12 @@
   },
   "active": "70f51fd5a74fe013",
   "lastOpenFiles": [
+    "posts/Memories of Aht Urghan Production Process/index.md",
+    "posts/_index.md",
     "_index.md",
+    "docs/Projects/hidden.md",
+    "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン.md",
+    "posts/Memories of Aht Urghan Production Process",
     "posts/Custom Looped Music tutorial (2023) v2/index.md",
     "posts/Custom FFXI Looped Music Tutorial (2023).md",
     "posts/XiMCScreenshotEnglish.png",
@@ -163,19 +168,16 @@
     "posts/Custom Looped Music tutorial (2023)",
     "posts/untitled folder",
     "posts/Custom FFXI Looped Music Tutorial 2023/_index.md",
-    "posts/_index.md",
     "Contact.md",
     "posts/Custom FFXI Looped Music Tutorial 2023/SamplesScrubbingRX.png",
     "posts/Custom FFXI Looped Music Tutorial 2023/XiMCScreenshotEnglish.png",
     "posts/Custom FFXI Looped Music Tutorial 2023",
     "docs/Projects/Podcasts/Tales of Nocturne.md",
     "_index 2.md",
-    "docs/Projects/hidden.md",
     "Untitled.canvas",
     "docs/Projects/Music/_index.md",
     "docs/Projects/Podcasts/_index.md",
     "docs/Projects/_index.md",
-    "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン.md",
     "docs/Projects/Music/Melodies of Nocturne.md",
     "SamplesScrubbingRX.png",
     "posts/migrate-from-jekyll.md",
