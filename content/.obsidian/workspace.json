@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン.md",
+                "file": "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン.md",
+                "file": "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン.md",
+                "file": "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン.md"
+                "file": "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md"
               }
             }
           }
@@ -148,9 +148,14 @@
   },
   "active": "70f51fd5a74fe013",
   "lastOpenFiles": [
+    "images/ToAUOST.png.md",
+    "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
+    "images",
+    "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/MoAU-Album-Art.png",
+    "docs/Projects/Music/Melodies of Nocturne.md",
+    "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン",
     "_index.md",
     "posts/Memories of Aht Urghan Production Process/index.md",
-    "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン.md",
     "docs/Projects/Podcasts/Tales of Nocturne.md",
     "posts/_index.md",
     "docs/Projects/hidden.md",
@@ -178,7 +183,6 @@
     "docs/Projects/Music/_index.md",
     "docs/Projects/Podcasts/_index.md",
     "docs/Projects/_index.md",
-    "docs/Projects/Music/Melodies of Nocturne.md",
     "SamplesScrubbingRX.png",
     "posts/migrate-from-jekyll.md",
     "menu/indexxx.md",
@@ -188,7 +192,6 @@
     "docs/shortcodes/section/first-page.md",
     "docs/shortcodes/section/_index.md",
     "docs/shortcodes/_index.md",
-    "docs/Projects/Music/Producer/_index.md",
     "docs/Projects/Untitled",
     "docs/Projects/Music/Composer"
   ]
