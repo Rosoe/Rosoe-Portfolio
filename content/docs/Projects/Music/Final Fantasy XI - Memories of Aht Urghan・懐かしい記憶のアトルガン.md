@@ -1,8 +1,7 @@
 ---
-title: FFXI: Memories of Aht Urghan・懐かしい記憶のアトルガン
 bookHidden: false
 ---
-# Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン
+# FFXI - Memories of Aht Urghan・懐かしい記憶のアトルガン
 *Status: Complete
 Release Date: TBD*
 
