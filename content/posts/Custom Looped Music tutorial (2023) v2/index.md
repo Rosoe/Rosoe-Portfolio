@@ -64,7 +64,7 @@ Find your loop point for the song, note down the sample number, then divide this
 ### 2. Convert your files with XiMC
 XiMC (Final Fantasy XI Music Converter) is a program someone made in the 2000s. I know not of its providence or its safety. All I can say is that I've used it, nothing bad seemed to happen, and it converted my .WAV files to looping BGW files for use in FFXI. It is for Windows Only and a little hard to find, until now. 
 
-[You can download my copy of XiMC here.](https://drive.google.com/file/d/1hcAz4WX3NUU87KPZKclcvYKnGnb6x3Fe/view?usp=sharing) It includes an updated list of music from FFXI so you can more easily identify the original game files you will need to replace.
+[You can download my copy of XiMC here.](https://drive.google.com/file/d/1hUd0lmKpxFABAJ_a6r_GsEBKUojr0zJc/view?usp=sharing) It includes an updated list of music from FFXI so you can more easily identify the original game files you will need to replace.
 
 So, open XiMC and you will be greeted with a mix of Japanese and broken unicode if you're on a non-Japanese based Windows install. Never fear though, I made a bad english translation on a screenshot for you to reference:
 
