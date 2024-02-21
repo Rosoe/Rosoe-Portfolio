@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
+                "file": "content/docs/Projects/Podcasts/Tales of Nocturne/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
+                "file": "content/docs/Projects/Podcasts/Tales of Nocturne/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
+                "file": "content/docs/Projects/Podcasts/Tales of Nocturne/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md"
+                "file": "content/docs/Projects/Podcasts/Tales of Nocturne/index.md"
               }
             }
           }
@@ -148,11 +148,14 @@
   },
   "active": "f0cf27597622dc9c",
   "lastOpenFiles": [
-    "content/_index.md",
+    "static/images/ToAUOST 1.jpeg",
+    "content/docs/Projects/Podcasts/Tales of Nocturne/index.md",
+    "content/docs/Projects/Podcasts/Tales of Nocturne/TalesOfNocturneShowArt.png",
+    "content/docs/Projects/Podcasts/Tales of Nocturne/NocturneLogoLarge.jpeg",
     "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
+    "content/_index.md",
     "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/ToAUOST.jpeg",
     "content/docs/Projects/Music/Melodies of Nocturne.md",
-    "static/images/NocturneLogoLarge.jpeg",
     "content/posts/_index.md",
     "content/posts/Memories of Aht Urghan Production Process/index.md",
     "content/posts/Custom Looped Music tutorial (2023) v2/index.md",
