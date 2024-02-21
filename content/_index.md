@@ -9,7 +9,7 @@ menu:
 
 # Hey there!
 
-Good to greet you. I'm Ro'sø. I make music, stories, and audio experiences. Welcome to my portfolio and blog.
+I'm Ro'sø. I make music, stories, and audio experiences. Welcome to my portfolio and blog.
 
 You can check out my most recent work below, all my projects in the menu to the left, and helpful posts, thoughts and updates in the blog section.
 
