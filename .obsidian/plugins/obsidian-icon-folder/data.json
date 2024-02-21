@@ -5,7 +5,10 @@
     "fontSize": 16,
     "emojiStyle": "none",
     "iconColor": null,
-    "recentlyUsedIcons": [],
+    "recentlyUsedIcons": [
+      "IbDocumentPhoto",
+      "IbDocumentText"
+    ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
     "extraMargin": {
@@ -20,5 +23,13 @@
     "iconsBackgroundCheckEnabled": false,
     "iconsInNotesEnabled": true,
     "iconIdentifier": ":"
+  },
+  "content": {
+    "iconName": "IbDocumentText",
+    "iconColor": "#ffa3a3"
+  },
+  "static/images": {
+    "iconName": "IbDocumentPhoto",
+    "iconColor": "#ff8585"
   }
 }

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/docs/Projects/Podcasts/Tales of Nocturne/index.md",
+                "file": "content/_index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/docs/Projects/Podcasts/Tales of Nocturne/index.md",
+                "file": "content/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/docs/Projects/Podcasts/Tales of Nocturne/index.md",
+                "file": "content/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/docs/Projects/Podcasts/Tales of Nocturne/index.md"
+                "file": "content/_index.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "f0cf27597622dc9c",
   "lastOpenFiles": [
-    "static/images/ToAUOST 1.jpeg",
     "content/docs/Projects/Podcasts/Tales of Nocturne/index.md",
+    "static/images/ToAUOST 1.jpeg",
     "content/docs/Projects/Podcasts/Tales of Nocturne/TalesOfNocturneShowArt.png",
     "content/docs/Projects/Podcasts/Tales of Nocturne/NocturneLogoLarge.jpeg",
     "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
