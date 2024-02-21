@@ -13,7 +13,7 @@ Tales of Nocturne is a night-time fiction podcast - a podcast design to help one
 Sweet dreams. 🌕
 
 ## Show Art
-![Podcast Art](TalesOfNocturneShowArt.png)
+![Podcast Art](NocturneLogoLArge.jpeg)
 
 Art by [Anne Sigismund](https://www.annesigismund.com)
 
