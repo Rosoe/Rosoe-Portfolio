@@ -1,0 +1,165 @@
+{
+  "main": {
+    "id": "111e4c81ff98b3c0",
+    "type": "split",
+    "children": [
+      {
+        "id": "c99fb7f345219210",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f0cf27597622dc9c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0e4ca3e94543c0bd",
+    "type": "split",
+    "children": [
+      {
+        "id": "1bef4cbd816f065c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da06d0b48308e5fc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e653e23df7679438",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b33f50a8df3ef237",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b0fc974a8837fa68",
+    "type": "split",
+    "children": [
+      {
+        "id": "94019feea0d4ac1c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2cf6c522ab078ab8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a6fa7d3c77495787",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1f65c7e29bb349a4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e85c480f0da1476e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "f0cf27597622dc9c",
+  "lastOpenFiles": [
+    "content/_index.md",
+    "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
+    "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/ToAUOST.jpeg",
+    "content/docs/Projects/Music/Melodies of Nocturne.md",
+    "static/images/NocturneLogoLarge.jpeg",
+    "content/posts/_index.md",
+    "content/posts/Memories of Aht Urghan Production Process/index.md",
+    "content/posts/Custom Looped Music tutorial (2023) v2/index.md",
+    "content/posts/Custom Looped Music tutorial (2023) v2/SamplesScrubbingRXLarge.jpeg",
+    "content/posts/Custom Looped Music tutorial (2023) v2/SamplesScrubbingRX copy.png",
+    "content/posts/Custom Looped Music tutorial (2023) v2/SamplesScrubbingRX Large.jpeg",
+    "content/posts/Custom Looped Music tutorial (2023) v2/XiMCScreenshotEnglish.png",
+    "content/posts/Custom Looped Music tutorial (2023) v2/SamplesScrubbingRX.png"
+  ]
+}
