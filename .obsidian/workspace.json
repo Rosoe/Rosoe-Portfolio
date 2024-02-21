@@ -11,11 +11,9 @@
             "id": "f0cf27597622dc9c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "content/_index.md",
-                "mode": "source",
-                "source": false
+                "file": "content/docs/Projects/Podcasts/Tales of Nocturne/NocturneLogoLarge.jpeg"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/docs/Projects/Podcasts/Tales of Nocturne/NocturneLogoLarge.jpeg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/docs/Projects/Podcasts/Tales of Nocturne/NocturneLogoLarge.jpeg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/_index.md"
+                "file": "content/docs/Projects/Podcasts/Tales of Nocturne/NocturneLogoLarge.jpeg"
               }
             }
           }
@@ -148,13 +146,13 @@
   },
   "active": "f0cf27597622dc9c",
   "lastOpenFiles": [
+    "content/docs/Projects/Podcasts/Tales of Nocturne/index.md",
+    "content/_index.md",
     "content/posts/_index.md",
     "static/images/NocturneLogoLargei.jpeg",
     "static/images/ToAUOSTi.jpeg",
     "content/docs/Projects/Podcasts/Tales of Nocturne/NocturneLogoLarge.jpeg",
-    "content/_index.md",
     "content/docs/Projects/Music/Melodies of Nocturne.md",
-    "content/docs/Projects/Podcasts/Tales of Nocturne/index.md",
     "content/docs/Projects/Podcasts/Tales of Nocturne/TalesOfNocturneShowArt.png",
     "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
     "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/ToAUOST.jpeg",
