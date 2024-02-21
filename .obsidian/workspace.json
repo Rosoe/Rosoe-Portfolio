@@ -11,9 +11,11 @@
             "id": "f0cf27597622dc9c",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "content/docs/Projects/Podcasts/Tales of Nocturne/NocturneLogoLarge.jpeg"
+                "file": "content/menu/index.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/docs/Projects/Podcasts/Tales of Nocturne/NocturneLogoLarge.jpeg",
+                "file": "content/menu/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/docs/Projects/Podcasts/Tales of Nocturne/NocturneLogoLarge.jpeg",
+                "file": "content/menu/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/docs/Projects/Podcasts/Tales of Nocturne/NocturneLogoLarge.jpeg"
+                "file": "content/menu/index.md"
               }
             }
           }
@@ -144,14 +146,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f0cf27597622dc9c",
+  "active": "da06d0b48308e5fc",
   "lastOpenFiles": [
-    "content/docs/Projects/Podcasts/Tales of Nocturne/index.md",
     "content/_index.md",
+    "content/menu/index.md",
+    "themes/hugo-book/images/tn.png",
+    "themes/hugo-book/images/screenshot.png",
+    "content/Contact.md",
+    "content/docs/Projects/Podcasts/Tales of Nocturne/NocturneLogoLarge.jpeg",
+    "content/docs/Projects/Podcasts/Tales of Nocturne/index.md",
     "content/posts/_index.md",
     "static/images/NocturneLogoLargei.jpeg",
     "static/images/ToAUOSTi.jpeg",
-    "content/docs/Projects/Podcasts/Tales of Nocturne/NocturneLogoLarge.jpeg",
     "content/docs/Projects/Music/Melodies of Nocturne.md",
     "content/docs/Projects/Podcasts/Tales of Nocturne/TalesOfNocturneShowArt.png",
     "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
@@ -160,8 +166,6 @@
     "content/posts/Custom Looped Music tutorial (2023) v2/index.md",
     "content/posts/Custom Looped Music tutorial (2023) v2/SamplesScrubbingRXLarge.jpeg",
     "content/posts/Custom Looped Music tutorial (2023) v2/SamplesScrubbingRX copy.png",
-    "content/posts/Custom Looped Music tutorial (2023) v2/SamplesScrubbingRX Large.jpeg",
-    "content/posts/Custom Looped Music tutorial (2023) v2/XiMCScreenshotEnglish.png",
-    "content/posts/Custom Looped Music tutorial (2023) v2/SamplesScrubbingRX.png"
+    "content/posts/Custom Looped Music tutorial (2023) v2/SamplesScrubbingRX Large.jpeg"
   ]
 }
