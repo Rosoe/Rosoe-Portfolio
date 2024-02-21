@@ -7,11 +7,13 @@ menu:
     weight: 1
 ---
 
-# Hey there! Velkommen!
+# Hey there!
 
-I'm Ro'sø. I'm a Denmark-based Brit who makes music, stories, and audio experiences. Welcome to my profile and thought vault! You can check out my most recent work below and all my projects in the menu to the left. 
+Good to greet you. I'm Ro'sø. I make music, stories, and audio experiences. Welcome to my portfolio and blog.
 
-If you're here to hire me, click the contact menu option for all the ways to reach me and pick your favourite. If you just want to say hi the contact tab still works for this too!
+You can check out my most recent work below, all my projects in the menu to the left, and helpful posts, thoughts and updates in the blog section.
+
+If you want to work together, click the contact menu option for all the ways to reach me and pick your favourite.
 
 # Latest Projects 
 
@@ -23,7 +25,7 @@ If you're here to hire me, click the contact menu option for all the ways to rea
 
 <---> <!-- magic separator, between columns -->
 
-## [Memories of Aht Urghan](docs/projects/music/final-fantasy-xi-memories-of-aht-urghan懐かしい記憶のアトルガン/)
+## [Memories of Aht Urhgan](docs/projects/music/final-fantasy-xi-memories-of-aht-urghan懐かしい記憶のアトルガン/)
 *Release Date: TBA*
 
 {{< /columns >}}
@@ -34,7 +36,7 @@ Night-time narrations for nervous sleepers. Fantasy tales from the world of Noct
 
 <---> <!-- magic separator, between columns -->
 
-An unofficial remaster of the FFXI: Treasures of Aht Urghan OST. Made with love and nostalgia for the [HorizonXI](https://horizonxi.com) community.
+An unofficial remaster of the FFXI: Treasures of Aht Urhgan OST. Made with love and nostalgia for the [HorizonXI](https://horizonxi.com) community.
 
 {{< /columns >}}
 
