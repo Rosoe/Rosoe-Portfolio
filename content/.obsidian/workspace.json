@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Projects/Podcasts/Tales of Nocturne/index.md",
+                "file": "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/Projects/Podcasts/Tales of Nocturne/index.md",
+                "file": "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/Projects/Podcasts/Tales of Nocturne/index.md",
+                "file": "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Projects/Podcasts/Tales of Nocturne/index.md"
+                "file": "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "70f51fd5a74fe013",
   "lastOpenFiles": [
+    "docs/Projects/Podcasts/Tales of Nocturne/index.md",
     "docs/Projects/Podcasts/Tales of Nocturne/TalesOfNocturneShowArt.png",
     "_index.md",
     "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/ToAURemakeAlbumArt.jpeg",
@@ -156,7 +157,6 @@
     "posts/Custom Looped Music tutorial (2023) v2/SamplesScrubbingRX.png",
     "docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
     "docs/Projects/_index.md",
-    "docs/Projects/Podcasts/Tales of Nocturne/index.md",
     "Contact.md",
     "TOAU.md",
     "docs/Projects/Music/Melodies of Nocturne.md",
