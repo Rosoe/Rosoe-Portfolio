@@ -9,11 +9,7 @@ menu:
 
 # Hey there!
 
-I'm Ro'sø. I make music, stories, and audio experiences. Welcome to my portfolio and blog.
-
-You can check out my most recent work below, all my projects in the menu to the left, and helpful posts, thoughts and updates in the blog section.
-
-If you want to work together, click the contact menu option for all the ways to reach me and pick your favourite.
+I'm Ro'sø. I make music, stories, and audio experiences. 
 
 # Latest Projects 
 
