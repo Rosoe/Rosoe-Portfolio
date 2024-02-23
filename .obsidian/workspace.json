@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/_index.md"
+                "file": "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md"
               }
             }
           }
@@ -148,14 +148,15 @@
   },
   "active": "f0cf27597622dc9c",
   "lastOpenFiles": [
-    "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
+    "content/docs/Projects/Music/_index.md",
+    "content/docs/Projects/Podcasts/Tales of Nocturne/index.md",
     "content/_index.md",
+    "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
     "content/Contact.md",
     "content/menu/index.md",
     "themes/hugo-book/images/tn.png",
     "themes/hugo-book/images/screenshot.png",
     "content/docs/Projects/Podcasts/Tales of Nocturne/NocturneLogoLarge.jpeg",
-    "content/docs/Projects/Podcasts/Tales of Nocturne/index.md",
     "content/posts/_index.md",
     "static/images/NocturneLogoLargei.jpeg",
     "static/images/ToAUOSTi.jpeg",

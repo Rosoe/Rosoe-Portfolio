@@ -1,7 +1,7 @@
 ---
-Title: FFXI - Memories of Aht Urhgan・懐かしい記憶のアトルガン
+Title: FFXI - Memories of Aht Urhgan
 ---
-# FFXI - Memories of Aht Urhgan・懐かしい記憶のアトルガン
+# FFXI - Memories of Aht Urhgan
 *Status: Complete*
 Release Date: 22nd February 2024
 ## Summary
