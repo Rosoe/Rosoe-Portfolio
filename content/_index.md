@@ -21,7 +21,7 @@ I'm Ro'sø. I make music, stories, and audio experiences.
 
 <---> <!-- magic separator, between columns -->
 
-## [Memories of Aht Urhgan](docs/projects/music/final-fantasy-xi-memories-of-aht-urghan懐かしい記憶のアトルガン/)
+## [FFXI: Memories of Aht Urhgan](docs/projects/music/final-fantasy-xi-memories-of-aht-urghan懐かしい記憶のアトルガン/)
 *Release Date: February 2024*
 
 {{< /columns >}}
