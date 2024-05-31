@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f0cf27597622dc9c",
+            "id": "3b2a37af01c8c6ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
+                "file": "content/docs/Projects/Music/Slice and Dice/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 448.5
   },
   "right": {
     "id": "b0fc974a8837fa68",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
+                "file": "content/docs/Projects/Music/Slice and Dice/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
+                "file": "content/docs/Projects/Music/Slice and Dice/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md"
+                "file": "content/docs/Projects/Music/Slice and Dice/index.md"
               }
             }
           }
@@ -133,8 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,12 +145,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f0cf27597622dc9c",
+  "active": "3b2a37af01c8c6ca",
   "lastOpenFiles": [
+    "content/docs/Projects/Music/Slice and Dice/sliceanddice.png",
+    "content/docs/Projects/Music/Slice and Dice/index.md",
     "content/docs/Projects/Music/_index.md",
+    "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
+    "content/posts/How Much Money Do Music Streaming Services Pay/index.md",
+    "content/docs/Projects/Music/Slice and Dice",
+    "content/posts/Custom Looped Music tutorial (2023) v2/index.md",
+    "content/posts/Custom Looped Music tutorial (2023) v2/SamplesScrubbingRX.png",
+    "content/posts/How Much Money Do Music Streaming Services Pay",
     "content/docs/Projects/Podcasts/Tales of Nocturne/index.md",
     "content/_index.md",
-    "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
     "content/Contact.md",
     "content/menu/index.md",
     "themes/hugo-book/images/tn.png",
@@ -164,9 +170,6 @@
     "content/docs/Projects/Podcasts/Tales of Nocturne/TalesOfNocturneShowArt.png",
     "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/ToAUOST.jpeg",
     "content/posts/Memories of Aht Urghan Production Process/index.md",
-    "content/posts/Custom Looped Music tutorial (2023) v2/index.md",
-    "content/posts/Custom Looped Music tutorial (2023) v2/SamplesScrubbingRXLarge.jpeg",
-    "content/posts/Custom Looped Music tutorial (2023) v2/SamplesScrubbingRX copy.png",
-    "content/posts/Custom Looped Music tutorial (2023) v2/SamplesScrubbingRX Large.jpeg"
+    "content/posts/Custom Looped Music tutorial (2023) v2/SamplesScrubbingRXLarge.jpeg"
   ]
 }
