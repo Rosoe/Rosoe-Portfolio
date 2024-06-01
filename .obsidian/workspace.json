@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/docs/Projects/Games/_index.md",
+                "file": "content/docs/Projects/Games/Slice and Dice/index.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/docs/Projects/Games/_index.md",
+                "file": "content/docs/Projects/Games/Slice and Dice/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/docs/Projects/Games/_index.md",
+                "file": "content/docs/Projects/Games/Slice and Dice/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/docs/Projects/Games/_index.md"
+                "file": "content/docs/Projects/Games/Slice and Dice/index.md"
               }
             }
           }
@@ -147,13 +147,13 @@
   },
   "active": "3b2a37af01c8c6ca",
   "lastOpenFiles": [
-    "content/docs/Projects/Music/_index.md",
+    "content/docs/Projects/Games/Slice and Dice/sliceanddice.png",
+    "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
     "content/docs/Projects/Games/_index.md",
+    "content/docs/Projects/Music/_index.md",
     "content/docs/Projects/_index.md",
     "content/docs/Projects/Games/Slice and Dice/index.md",
     "content/docs/Projects/Games",
-    "content/docs/Projects/Music/Final Fantasy XI - Memories of Aht Urghan・懐かしい記憶のアトルガン/index.md",
-    "content/docs/Projects/Games/Slice and Dice/sliceanddice.png",
     "content/posts/How Much Money Do Music Streaming Services Pay/index.md",
     "content/docs/Projects/Games/Slice and Dice",
     "content/posts/Custom Looped Music tutorial (2023) v2/index.md",
