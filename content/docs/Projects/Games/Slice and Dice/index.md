@@ -4,6 +4,8 @@ Title: Slice and Dice
 # Slice and Dice
 *Status: Complete*
 Release Date: April 2024
+
+![Slice and Dice Logo](sliceanddice.png)
 ## Summary
 Tann, the maker of Slice and Dice (available on [itch.io](https://tann.itch.io/slice-dice), [Steam](https://store.steampowered.com/app/1775490/Slice__Dice/), [iOS](https://apps.apple.com/us/app/slice-dice/id6449848963), and [Android](https://play.google.com/store/apps/details?id=com.com.tann.dice&hl=en&pli=1)), asked me to produce a track for the 3.0 update of the game. This was a huge update that introduced many elements that the games fans had been asking for; one of which being music to accompany the game.
 
@@ -13,4 +15,3 @@ Tann and I went back and forth on how intense the track could be, with me wantin
 
 All this resulted in *Swiftsoles*! If you want to listen, check out Slice and Dice [Demo on Itch.io](https://tann.itch.io/slice-dice) and consider buying the game on whichever platform you enjoy most!
 
-![Slice and Dice Logo](sliceanddice.png)
