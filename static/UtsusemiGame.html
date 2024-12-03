@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Utsusemi</title>
+    <style>
+        body { font-family: system-ui; max-width: 800px; margin: 20px auto; padding: 20px; }
+        .battle-scene { background: #f0f0f0; height: 300px; display: flex; justify-content: space-between; align-items: center; padding: 20px; margin: 20px 0; position: relative; }
+        .player, .mob { width: 100px; height: 100px; border-radius: 50%; }
+        .player { background: #2196F3; position: relative; }
+        .mob { background: #f44336; transition: transform 0.5s; }
+        .mob.attacking { transform: translateX(-300px); }
+        .shadow { position: absolute; width: 100%; height: 100%; background: rgba(33,150,243,0.3); border-radius: 50%; animation: shadowPulse 2s infinite; }
+        .status { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 20px 0; background: #f5f5f5; padding: 15px; border-radius: 8px; }
+        .spell-button { background: #4CAF50; color: white; padding: 15px; margin: 10px 0; border-radius: 8px; cursor: pointer; position: relative; overflow: hidden; }
+        .cast-bar { position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background: rgba(255,255,255,0.2); }
+        .cast-progress { width: 0%; height: 100%; background: white; }
+        .spell-button.casting { background: #888; cursor: not-allowed; }
+        .spell-button.on-cooldown { background: #666; cursor: not-allowed; }
+        .cooldown-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); border-radius: 8px; display: none; align-items: center; justify-content: center; color: white; font-size: 24px; }
+        .hits { height: 150px; overflow-y: auto; background: #f5f5f5; padding: 10px; border-radius: 8px; font-family: monospace; }
+        @keyframes shadowPulse { 50% { transform: scale(1.2); opacity: 0.2; } }
+        @keyframes damageFlash { 0%, 100% { background: #f0f0f0; } 50% { background: #ffcdd2; } }
+    </style>
+</head>
+<body>
+    <div class="battle-scene">
+        <div class="player" id="player"></div>
+        <div class="mob" id="mob"></div>
+    </div>
+    <div class="status" id="status"></div>
+    <div class="spell-button" id="ichiBtn" data-spell="ichi">
+        Utsusemi: Ichi (4s)
+        <div class="cooldown-overlay"></div>
+        <div class="cast-bar"><div class="cast-progress"></div></div>
+    </div>
+    <div class="spell-button" id="niBtn" data-spell="ni">
+        Utsusemi: Ni (1.5s)
+        <div class="cooldown-overlay"></div>
+        <div class="cast-bar"><div class="cast-progress"></div></div>
+    </div>
+    <div class="spell-button" id="kurayamiBtn" data-spell="kurayami" style="display:none">
+        Kurayami: Ichi (4s)
+        <div class="cooldown-overlay"></div>
+        <div class="cast-bar"><div class="cast-progress"></div></div>
+    </div>
+    <div class="spell-button" id="hojoBtn" data-spell="hojo" style="display:none">
+        Hojo: Ichi (4s)
+        <div class="cooldown-overlay"></div>
+        <div class="cast-bar"><div class="cast-progress"></div></div>
+    </div>
+    <div class="spell-button" id="cancelBtn" style="background:#9C27B0">
+        Cancel Shadows
+        <div class="cast-bar"><div class="cast-progress"></div></div>
+    </div>
+        <div class="cast-bar"><div class="cast-progress"></div></div>
+    </div>
+    <div id="log" class="hits"></div>
+
+    <script>
+    const game = {
+        config: {
+            spells: {
+                ichi: { castTime: 4000, cooldown: 30000, shadows: 3 },
+                ni: { castTime: 1500, cooldown: 40000, shadows: 4 },
+                kurayami: { castTime: 4000, cooldown: 30000, duration: 60000, missBonus: 0.10 },
+                hojo: { castTime: 4000, cooldown: 30000, shortDuration: 30000, longDuration: 60000, speedPenalty: 0.15 }
+            },
+            mobAttackInterval: 3750,
+            unlockThreshold: 20,
+            hojoThreshold: 29
+        },
+        state: {
+            cancelClicks: 0,
+            running: false,
+            time: 0,
+            shadows: 0,
+            shadowType: '-',
+            stats: { blocked: 0, evaded: 0, taken: 0 },
+            spells: { ichi: {}, ni: {}, kurayami: {}, hojo: {} },
+            blind: { active: false, endTime: 0 },
+            slow: { active: false, endTime: 0, value: 0 }
+        },
+        
+        init() {
+            this.setupListeners();
+            this.updateUI();
+            this.log('Cast either spell to begin!');
+        },
+
+        setupListeners() {
+            document.querySelectorAll('[data-spell]').forEach(btn => 
+                btn.addEventListener('click', () => this.castSpell(btn.dataset.spell)));
+            document.getElementById('cancelBtn').addEventListener('click', () => {
+                if (!this.state.running) this.start();
+                this.cancelShadows();
+            });
+        },
+
+        start() {
+            if (!this.state.running) {
+                this.state.running = true;
+                this.lastFrame = performance.now();
+                requestAnimationFrame(this.gameLoop.bind(this));
+                this.scheduleMobAttack();
+            }
+        },
+
+        gameLoop(timestamp) {
+            if (!this.state.running) return;
+            if (!this.startTime) this.startTime = timestamp;
+            
+            const delta = (timestamp - this.lastFrame) / 1000;
+            this.lastFrame = timestamp;
+            this.state.time = (timestamp - this.startTime) / 1000;
+            
+            // Check blind and slow status
+            if (this.state.blind.active && Date.now() > this.state.blind.endTime) {
+                this.state.blind.active = false;
+                this.log('Blind effect faded');
+            }
+            if (this.state.slow.active && Date.now() > this.state.slow.endTime) {
+                this.state.slow.active = false;
+                this.log('Slow effect faded');
+            }
+            
+            // Check for spell unlocks
+            const totalAvoided = this.state.stats.blocked + this.state.stats.evaded;
+            const kurayamiBtn = document.getElementById('kurayamiBtn');
+            const hojoBtn = document.getElementById('hojoBtn');
+            
+            if (totalAvoided >= this.config.unlockThreshold && kurayamiBtn.style.display === 'none') {
+                kurayamiBtn.style.display = 'block';
+                kurayamiBtn.style.background = '#673AB7';
+                this.log('Kurayami: Ichi unlocked!');
+            }
+            
+            if (totalAvoided >= this.config.hojoThreshold && hojoBtn.style.display === 'none') {
+                hojoBtn.style.display = 'block';
+                hojoBtn.style.background = '#3F51B5';
+                this.log('Hojo: Ichi unlocked!');
+            }
+            
+            this.updateCastBars(timestamp);
+            this.updateUI();
+            
+            requestAnimationFrame(this.gameLoop.bind(this));
+        },
+
+        castSpell(type) {
+            if (!this.state.running) this.start();
+            
+            // Reset cancel counter when casting spells
+            this.state.cancelClicks = 0;
+            document.querySelector('#cancelBtn .cast-progress').style.width = '0%';
+            
+            // Check if any spell is currently casting
+            const isCasting = Object.values(this.state.spells).some(spell => spell.casting);
+            if (isCasting || this.state.spells[type].onCooldown) return;
+
+            const spell = this.config.spells[type];
+            const btn = document.getElementById(`${type}Btn`);
+            
+            this.state.spells[type] = {
+                casting: true,
+                castStart: performance.now(),
+                timeoutId: setTimeout(() => {
+                    if (!this.state.running || !this.state.spells[type].casting) return;
+                    
+                    if (type === 'kurayami') {
+                        this.state.blind = {
+                            active: true,
+                            endTime: Date.now() + spell.duration
+                        };
+                        this.log('Enemy blinded!');
+                    } else if (type === 'hojo') {
+                        const duration = Math.random() < 0.75 ? spell.longDuration : spell.shortDuration;
+                        this.state.slow = {
+                            active: true,
+                            endTime: Date.now() + duration,
+                            value: spell.speedPenalty
+                        };
+                        this.log('Enemy slowed!');
+                    } else if (!(this.state.shadowType === 'ni' && type === 'ichi' && this.state.shadows > 0)) {
+                        this.state.shadows = spell.shadows;
+                        this.state.shadowType = type;
+                        this.log(`Gained ${spell.shadows} shadows`);
+                    } else {
+                        this.log('Cannot overwrite Ni shadows with Ichi');
+                    }
+
+                    this.startCooldown(type, btn);
+                }, spell.castTime)
+            };
+
+            btn.classList.add('casting');
+            this.log(`Casting Utsusemi: ${type}`);
+        },
+
+        startCooldown(type, btn) {
+            const spell = this.config.spells[type];
+            this.state.spells[type] = { onCooldown: true, cooldownStart: Date.now() };
+            
+            btn.classList.remove('casting');
+            btn.classList.add('on-cooldown');
+            
+            const cooldownDisplay = btn.querySelector('.cooldown-overlay');
+            cooldownDisplay.style.display = 'flex';
+            
+            const updateCooldown = () => {
+                if (!this.state.running) return;
+                const remaining = Math.ceil((spell.cooldown - (Date.now() - this.state.spells[type].cooldownStart)) / 1000);
+                
+                if (remaining > 0) {
+                    cooldownDisplay.textContent = remaining;
+                    requestAnimationFrame(updateCooldown);
+                } else {
+                    this.state.spells[type] = {};
+                    btn.classList.remove('on-cooldown');
+                    cooldownDisplay.style.display = 'none';
+                }
+            };
+            updateCooldown();
+        },
+
+        mobAttack() {
+            if (!this.state.running) return;
+            
+            const mob = document.getElementById('mob');
+            mob.classList.add('attacking');
+            
+            setTimeout(() => {
+                const missChance = 0.05 + (this.state.blind.active ? this.config.spells.kurayami.missBonus : 0);
+                if (Math.random() < missChance) {
+                    this.state.stats.evaded++;
+                    this.log('Attack evaded!');
+                    mob.classList.remove('attacking');
+                    return;
+                }
+                
+                if (this.state.shadows > 0) {
+                    this.state.shadows--;
+                    this.state.stats.blocked++;
+                    this.log('Attack blocked by shadow!');
+                } else {
+                    this.state.stats.taken++;
+                    this.log('Hit taken!');
+                    const battleScene = document.querySelector('.battle-scene');
+                    battleScene.style.animation = 'none';
+                    battleScene.offsetHeight; // Force reflow
+                    battleScene.style.animation = 'damageFlash 0.3s';
+                    
+                    Object.entries(this.state.spells).forEach(([type, state]) => {
+                        if (state.casting) {
+                            clearTimeout(state.timeoutId);
+                            const remainingTime = this.config.spells[type].castTime - 
+                                (performance.now() - state.castStart) + 100;
+                            
+                            const btn = document.getElementById(`${type}Btn`);
+                            btn.classList.remove('casting');
+                            btn.querySelector('.cast-progress').style.width = '0%';
+                            
+                            this.log(`${type} cast interrupted!`);
+                            
+                            // Show lockout timer with red background
+                            const lockoutDisplay = btn.querySelector('.cooldown-overlay');
+                            lockoutDisplay.style.display = 'flex';
+                            lockoutDisplay.style.background = 'rgba(255,0,0,0.5)';
+                            
+                            this.state.spells[type] = {
+                                onCooldown: true,
+                                cooldownStart: Date.now(),
+                                lockoutTime: remainingTime
+                            };
+                            
+                            const updateLockout = () => {
+                                if (!this.state.running) return;
+                                const remaining = Math.ceil((remainingTime - (Date.now() - this.state.spells[type].cooldownStart)) / 1000);
+                                
+                                if (remaining > 0) {
+                                    lockoutDisplay.textContent = remaining;
+                                    requestAnimationFrame(updateLockout);
+                                } else {
+                                    this.state.spells[type] = {};
+                                    btn.classList.remove('on-cooldown');
+                                    lockoutDisplay.style.display = 'none';
+                                    lockoutDisplay.style.background = 'rgba(0,0,0,0.5)';
+                                }
+                            };
+                            updateLockout();
+                        }
+                    });
+                }
+                
+                this.updateUI();
+                mob.classList.remove('attacking');
+            }, 500);
+        },
+
+        scheduleMobAttack() {
+            if (this.state.running) {
+                const interval = this.config.mobAttackInterval * (this.state.slow.active ? (1 + this.state.slow.value) : 1);
+                setTimeout(() => {
+                    this.mobAttack();
+                    this.scheduleMobAttack();
+                }, interval);
+            }
+        },
+
+        cancelShadows() {
+            if (!this.state.running) return;
+            
+            this.state.cancelClicks++;
+            const cancelProgress = document.querySelector('#cancelBtn .cast-progress');
+            cancelProgress.style.width = `${(this.state.cancelClicks / 3) * 100}%`;
+            
+            if (this.state.cancelClicks === 3) {
+                this.state.shadows = 0;
+                this.state.shadowType = '-';
+                this.state.cancelClicks = 0;
+                cancelProgress.style.width = '0%';
+                this.updateUI();
+                this.log('Shadows cancelled');
+            }
+        },
+
+        updateCastBars(timestamp) {
+            Object.entries(this.state.spells).forEach(([type, state]) => {
+                if (state.casting) {
+                    const progress = ((timestamp - state.castStart) / this.config.spells[type].castTime) * 100;
+                    document.querySelector(`#${type}Btn .cast-progress`).style.width = `${Math.min(progress, 100)}%`;
+                }
+            });
+        },
+
+        updateUI() {
+            const player = document.getElementById('player');
+            player.innerHTML = Array(this.state.shadows).fill()
+                .map((_, i) => `<div class="shadow" style="animation-delay:${i * 0.2}s"></div>`).join('');
+            
+            document.getElementById('status').innerHTML = `
+                <div>Shadows: ${this.state.shadows}</div>
+                <div>Time: ${this.state.time.toFixed(1)}s</div>
+                <div>Type: ${this.state.shadowType}</div>
+                <div>Blocked: ${this.state.stats.blocked}</div>
+                <div>Evaded: ${this.state.stats.evaded}</div>
+                <div>Taken: ${this.state.stats.taken}</div>
+            `;
+        },
+
+        log(message) {
+            const log = document.getElementById('log');
+            log.innerHTML = `[${this.state.time.toFixed(1)}s] ${message}<br>${log.innerHTML}`;
+        }
+    };
+
+    game.init();
+    </script>
+</body>
+</html>
