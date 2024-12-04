@@ -10,7 +10,6 @@ tags:
   - Music
   - Money
 ---
-
 Before releasing any music I always wondered how much people were paid when their music was streamed. It is a remarkably difficult thing to pin down. I researched the question beforehand, came up with my own estimates, and ended up being about 50% wrong when I released my first album to streaming services (a [FFXI remake/cover album](https://artists.landr.com/FFXI-Memories-Of-Aht-Urhgan) of music I covered for the [HorizonXI](https://horizonxi.com) private server.)
 
 I wasn't doing the project to make a profit but I was annoyed at how difficult it is to calculate your earnings in advance of releasing a project. Most of the articles made it seem hard to calculate or impossible to estimate. This is wrong. It is easy to estimate, it is easy to explain the factors and context that influence those estimates, and that's what I'm going to do here.
@@ -57,7 +56,8 @@ The biggest variable for most streaming services is the listeners location. The 
 | Poland                     | $0.000597925                  |
 | Chile                      | $0.000569540                  |
 | Colombia                   | $0.000220994                  |
-Data from February 2024, the first month of streams from Memories of Aht Urhgan
+
+*Data from February 2024, the first month of streams from Memories of Aht Urhgan*
 ### Type of Listen
 Not all streaming events are created equal. When you get your first earning report back you will see multiple entries for the same song covering the same time period. This is because steaming services will charge you different amount of money depending on the kind of stream that happens. There are a few ways they striate this (which will not be made clear in the report.)
 
