@@ -117,5 +117,4 @@ The knowledge gather for this guide owes a debt to those who came 20 years befor
 Let me know how it goes in the comments below and I might be able to help and I might help.
 
 # Comments
-Not enabled yet, sorry!
-
+ {{< chat Blog1FFXIMusicEdits >}} 
