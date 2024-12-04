@@ -63,7 +63,7 @@
             spells: {
                 ichi: { castTime: 4000, cooldown: 30000, shadows: 3 },
                 ni: { castTime: 1500, cooldown: 40000, shadows: 4 },
-                kurayami: { castTime: 4000, cooldown: 30000, duration: 60000, missBonus: 0.10 },
+                kurayami: { castTime: 4000, cooldown: 30000, duration: 60000, missBonus: 0.15 },
                 hojo: { castTime: 4000, cooldown: 30000, shortDuration: 30000, longDuration: 60000, speedPenalty: 0.15 }
             },
             mobAttackInterval: 3750,
@@ -248,7 +248,7 @@
                     const battleScene = document.querySelector('.battle-scene');
                     battleScene.style.animation = 'none';
                     battleScene.offsetHeight; // Force reflow
-                    battleScene.style.animation = 'damageFlash 0.3s';
+                    battleScene.style.animation = 'damageFlash 0.4s';
                     
                     Object.entries(this.state.spells).forEach(([type, state]) => {
                         if (state.casting) {

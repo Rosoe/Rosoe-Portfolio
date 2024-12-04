@@ -38,11 +38,11 @@ An unofficial remaster of the FFXI: Treasures of Aht Urhgan OST. Made with love 
 
 {{< columns >}} <!-- begin columns block -->
 
-![Nocturne Podcast Art](/images/NocturneLogoLargei.jpeg)
+![Nocturne Podcast Art](https://rosoe.xyz/docs/projects/podcasts/tales-of-nocturne/NocturneLogoLarge.jpeg)
 
 <---> <!-- magic separator, between columns -->
 
-![ToAU Album Logo](/images/ToAUOSTi.jpeg)
+![ToAU Album Logo](https://rosoe.xyz/docs/projects/music/final-fantasy-xi-memories-of-aht-urghan懐かしい記憶のアトルガン/ToAUOST.jpeg)
 
 {{< /columns >}}
 
