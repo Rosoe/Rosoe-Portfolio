@@ -6,6 +6,63 @@
     <style>
         body { font-family: system-ui; max-width: 800px; margin: 20px auto; padding: 20px; }
         .battle-scene { background: #f0f0f0; height: 300px; display: flex; justify-content: space-between; align-items: center; padding: 20px; margin: 20px 0; position: relative; }
+        .danger-meter { 
+            position: absolute; 
+            top: 10px; 
+            left: 50%; 
+            transform: translateX(-50%);
+            width: 200px; 
+            height: 20px; 
+            background: #444;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .danger-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(to right, #ff9800, #f44336);
+            transition: width 0.3s ease;
+        }
+        .danger-text {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            line-height: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            z-index: 1;
+        }
+        .game-over {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .game-over-content {
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .restart-button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .restart-button:hover {
+            background: #45a049;
+        }
         .player, .mob { width: 100px; height: 100px; border-radius: 50%; }
         .player { background: #2196F3; position: relative; }
         .mob { background: #f44336; transition: transform 0.5s; }
@@ -24,12 +81,28 @@
         .shop-item { display: flex; justify-content: space-between; align-items: center; padding: 10px; margin: 5px 0; background: rgba(255,255,255,0.1); border-radius: 4px; }
         .shop-item button { background: #FFD700; color: black; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; }
         .shop-item button:disabled { background: #666; color: #999; cursor: not-allowed; }
+        .combo-text { color: #FF4081; font-weight: bold; }
         @keyframes shadowPulse { 50% { transform: scale(1.2); opacity: 0.2; } }
         @keyframes damageFlash { 0%, 100% { background: #f0f0f0; } 50% { background: #ffcdd2; } }
     </style>
 </head>
 <body>
-    <div class="battle-scene"><div class="player" id="player"></div><div class="mob" id="mob"></div></div>
+    <div class="battle-scene">
+        <div class="danger-meter">
+            <div class="danger-text">Danger Meter: 0/5</div>
+            <div class="danger-fill"></div>
+        </div>
+        <div class="player" id="player"></div>
+        <div class="mob" id="mob"></div>
+    </div>
+    <div class="game-over" id="gameOver">
+        <div class="game-over-content">
+            <h2>Game Over!</h2>
+            <p>You were hit 5 times in a row!</p>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <button class="restart-button" onclick="game.restart()">Try Again</button>
+        </div>
+    </div>
     <div class="status" id="status"></div>
     <div class="spell-button" id="ichiBtn" data-spell="ichi">Utsusemi: Ichi (4s)<div class="cooldown-overlay"></div><div class="cast-bar"><div class="cast-progress"></div></div></div>
     <div class="spell-button" id="niBtn" data-spell="ni">Utsusemi: Ni (1.5s)<div class="cooldown-overlay"></div><div class="cast-bar"><div class="cast-progress"></div></div></div>
@@ -71,8 +144,6 @@ const game = {
         mobAttackInterval: 3750,
         unlockThreshold: 20,
         hojoThreshold: 29,
-        gilReward: 10,
-        gilThreshold: 10,
         speedReduction: 0.06
     },
     state: {
@@ -82,7 +153,10 @@ const game = {
         shadows: 0, 
         shadowType: '-',
         gil: 0,
-        avoidedSinceLastReward: 0,
+        currentCombo: 0,
+        highestCombo: 0,
+        lastComboReward: 0,
+        consecutiveHits: 0,
         shopUnlocked: false,
         inventory: {
             hairpin: false,
@@ -97,8 +171,10 @@ const game = {
     },
     
     init() {
-        ['player', 'mob', 'status', 'log'].forEach(id => this.els[id] = document.getElementById(id));
+        ['player', 'mob', 'status', 'log', 'gameOver'].forEach(id => this.els[id] = document.getElementById(id));
         this.els.buttons = { cancel: document.getElementById('cancelBtn') };
+        this.els.dangerFill = document.querySelector('.danger-fill');
+        this.els.dangerText = document.querySelector('.danger-text');
         document.querySelectorAll('[data-spell]').forEach(btn => {
             this.els.buttons[btn.dataset.spell] = btn;
             btn.addEventListener('click', () => this.castSpell(btn.dataset.spell));
@@ -192,7 +268,7 @@ const game = {
                 } else this.log(`Cannot overwrite ${this.state.shadowType} shadows`);
 
                 this.startCooldown(type, btn);
-            }, spell.castTime)
+            }, spell.castTime * (this.state.inventory.belt ? (1 - this.config.speedReduction) : 1))
         };
         btn.classList.add('casting');
         this.log(`Casting ${type}`);
@@ -224,14 +300,96 @@ const game = {
         updateCooldown();
     },
 
+    gameOver() {
+        this.state.running = false;
+        document.getElementById('finalScore').textContent = this.state.highestCombo;
+        this.els.gameOver.style.display = 'flex';
+    },
+
+    restart() {
+        // Reset all state variables
+        this.state = {
+            cancelClicks: 0,
+            running: false,
+            time: 0,
+            shadows: 0,
+            shadowType: '-',
+            gil: 0,
+            currentCombo: 0,
+            highestCombo: 0,
+            lastComboReward: 0,
+            consecutiveHits: 0,
+            shopUnlocked: false,
+            inventory: {
+                hairpin: false,
+                belt: false,
+                san: false
+            },
+            stats: { blocked: 0, evaded: 0, taken: 0 },
+            spells: { ichi: {}, ni: {}, kurayami: {}, hojo: {}, jubaku: {} },
+            blind: { active: false, endTime: 0 },
+            slow: { active: false, endTime: 0, value: 0 },
+            paralysis: { active: false, endTime: 0 }
+        };
+
+        // Reset UI elements
+        this.els.dangerFill.style.width = '0%';
+        this.els.dangerText.textContent = 'Danger Meter: 0/5';
+        this.els.gameOver.style.display = 'none';
+        document.getElementById('auctionHouse').style.display = 'none';
+        
+        // Reset all spell buttons
+        Object.values(this.els.buttons).forEach(btn => {
+            btn.classList.remove('casting', 'on-cooldown');
+            const overlay = btn.querySelector('.cooldown-overlay');
+            if (overlay) {
+                overlay.style.display = 'none';
+                overlay.style.background = 'rgba(0,0,0,0.5)';
+            }
+            btn.querySelector('.cast-progress').style.width = '0%';
+        });
+        
+        // Reset shop buttons
+        document.querySelectorAll('.shop-item button').forEach(button => {
+            button.disabled = false;
+            button.textContent = button.textContent.includes('gil') ? button.textContent : 'Buy';
+        });
+        
+        // Hide unlockable buttons
+        ['sanBtn', 'kurayamiBtn', 'hojoBtn', 'jubakuBtn'].forEach(id => {
+            document.getElementById(id).style.display = 'none';
+        });
+
+        this.updateUI();
+        this.log('Game restarted! Cast a spell to begin!');
+    },
+
     checkGilReward() {
-        if (this.state.avoidedSinceLastReward >= this.config.gilThreshold) {
-            const gilEarned = this.config.gilReward;
+        // Reset consecutive hits when successfully avoiding damage
+        this.state.consecutiveHits = 0;
+        this.els.dangerFill.style.width = '0%';
+        this.els.dangerText.textContent = 'Danger Meter: 0/5';
+        
+        // Increment combo counter
+        this.state.currentCombo++;
+        
+        // Update highest combo if current is higher
+        if (this.state.currentCombo > this.state.highestCombo) {
+            this.state.highestCombo = this.state.currentCombo;
+        }
+        
+        // Check if we've hit a new 10-combo milestone
+        const currentMilestone = Math.floor(this.state.currentCombo / 10) * 10;
+        
+        if (currentMilestone >= 10 && currentMilestone > this.state.lastComboReward) {
+            const gilEarned = currentMilestone;  // Gil earned equals the milestone number
             this.state.gil += gilEarned;
-            this.state.avoidedSinceLastReward -= this.config.gilThreshold;
-            this.log(`<span class="gil-gain">Earned ${gilEarned} gil!</span>`);
+            this.state.lastComboReward = currentMilestone;
             
-            if (!this.state.shopUnlocked) {
+            // Log both the gil earned and the combo milestone
+            this.log(`<span class="gil-gain">${currentMilestone} Combo! Earned ${gilEarned} gil!</span>`);
+            
+            if (!this.state.shopUnlocked && this.state.gil >= 10) {
                 this.state.shopUnlocked = true;
                 document.getElementById('auctionHouse').style.display = 'block';
                 this.log('The Auction House has opened!');
@@ -274,7 +432,6 @@ const game = {
             const missChance = baseEvadeChance + (this.state.blind.active ? this.config.spells.kurayami.missBonus : 0);
             if (Math.random() < missChance) {
                 this.state.stats.evaded++;
-                this.state.avoidedSinceLastReward++;
                 this.checkGilReward();
                 this.log('Attack evaded!');
                 this.els.mob.classList.remove('attacking');
@@ -284,12 +441,23 @@ const game = {
             if (this.state.shadows > 0) {
                 this.state.shadows--;
                 this.state.stats.blocked++;
-                this.state.avoidedSinceLastReward++;
                 this.checkGilReward();
                 this.log('Attack blocked by shadow!');
             } else {
                 this.state.stats.taken++;
-                this.state.avoidedSinceLastReward = 0;
+                this.state.currentCombo = 0;       // Reset combo on hit
+                this.state.lastComboReward = 0;    // Reset last reward milestone
+                this.state.consecutiveHits++;      // Increment consecutive hits
+                
+                // Update danger meter
+                const dangerPercent = (this.state.consecutiveHits / 5) * 100;
+                this.els.dangerFill.style.width = `${dangerPercent}%`;
+                this.els.dangerText.textContent = `Danger Meter: ${this.state.consecutiveHits}/5`;
+                
+                if (this.state.consecutiveHits >= 5) {
+                    this.gameOver();
+                }
+                
                 this.log('Hit taken!');
                 const battleScene = document.querySelector('.battle-scene');
                 battleScene.style.animation = 'none';
@@ -386,8 +554,8 @@ const game = {
             <div>Shadows: ${this.state.shadows}</div>
             <div>Time: ${this.state.time.toFixed(1)}s</div>
             <div>Gil: ${this.state.gil}</div>
-            <div>Blocked: ${this.state.stats.blocked}</div>
-            <div>Evaded: ${this.state.stats.evaded}</div>
+            <div>Combo: ${this.state.currentCombo}</div>
+            <div>Highest: ${this.state.highestCombo}</div>
             <div>Taken: ${this.state.stats.taken}</div>
         `;
     },
