@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/How Much Money Do Music Streaming Services Pay/index.md",
+                "file": "content/posts/Custom Looped Music tutorial (2023) v2/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/How Much Money Do Music Streaming Services Pay/index.md",
+                "file": "content/posts/Custom Looped Music tutorial (2023) v2/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,6 +163,7 @@
   },
   "active": "3b2a37af01c8c6ca",
   "lastOpenFiles": [
+    "content/posts/How Much Money Do Music Streaming Services Pay/index.md",
     "static/cactuscommentsmodifiedv1.css",
     "static/cactuscomments.js",
     "static/cactuscomments.css",
@@ -173,10 +174,8 @@
     "layouts/shortcodes/chat.html.sb-1b399680-EAe21j",
     "layouts/partials/cactuscomments",
     "layouts/partials/untitled folder",
-    "content/posts/How Much Money Do Music Streaming Services Pay/index.md",
     "static/UtsusemiGame.html",
     "static/1",
-    "static/UtsusemiGame-claudev6.html",
     "content/Contact.md",
     "themes/hugo-book/README.md",
     "themes/hugo-book/static/svg/menu.svg",
