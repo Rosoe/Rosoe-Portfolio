@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/Custom Looped Music tutorial (2023) v2/index.md",
+                "file": "content/_index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "_index"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/Custom Looped Music tutorial (2023) v2/index.md",
+                "file": "content/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for _index"
             }
           },
           {
@@ -163,6 +163,7 @@
   },
   "active": "3b2a37af01c8c6ca",
   "lastOpenFiles": [
+    "content/posts/Custom Looped Music tutorial (2023) v2/index.md",
     "content/posts/How Much Money Do Music Streaming Services Pay/index.md",
     "content/_index.md",
     "static/UtsusemiGame.html",
@@ -193,7 +194,6 @@
     "content/docs/Projects/_index.md",
     "content/docs/Projects/Games",
     "content/docs/Projects/Games/Slice and Dice",
-    "content/posts/Custom Looped Music tutorial (2023) v2/index.md",
     "content/posts/How Much Money Do Music Streaming Services Pay",
     "content/docs/Projects/Podcasts/Tales of Nocturne/index.md",
     "content/menu/index.md",

@@ -22,11 +22,9 @@ I'm Ro'sø. I make music, stories, and audio experiences!
 {{< /columns >}}
 
 {{< columns >}} <!-- begin columns block -->
-
 Night-time narrations for nervous sleepers. Fantasy tales from the world of Nocturne weave with gentle music to help you to sleep.
 
 <---> <!-- magic separator, between columns -->
-
 An unofficial remaster of the FFXI: Treasures of Aht Urhgan OST. Made with love and nostalgia for the [HorizonXI](https://horizonxi.com) community.
 
 {{< /columns >}}
