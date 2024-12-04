@@ -70,7 +70,7 @@
     flex-direction: column;
     gap: 2em;
     padding: 2rem;
-    margin-top: -50vh;  /* Negative value to move it up */
+    margin-top: 5vh;  /* This controls vertical position */
     border-radius: var(--cactus-border-radius);
     background-color: var(--cactus-background-color--strong);
     color: var(--cactus-login-form-text-color);
