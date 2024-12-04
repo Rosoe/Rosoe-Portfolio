@@ -163,6 +163,8 @@
   },
   "active": "3b2a37af01c8c6ca",
   "lastOpenFiles": [
+    "static/cactuscomments.js",
+    "static/cactuscomments.css",
     "layouts/shortcodes/cactuscomments.css",
     "layouts/shortcodes/cactuscomments.js",
     "content/posts/Custom Looped Music tutorial (2023) v2/index.md",
@@ -198,8 +200,6 @@
     "content/docs/Projects/Music/_index.md",
     "content/docs/Projects/_index.md",
     "content/docs/Projects/Games",
-    "content/docs/Projects/Games/Slice and Dice",
-    "content/posts/How Much Money Do Music Streaming Services Pay",
     "content/docs/Projects/Podcasts/Tales of Nocturne/index.md",
     "content/menu/index.md",
     "content/posts/_index.md",
