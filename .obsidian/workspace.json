@@ -163,6 +163,7 @@
   },
   "active": "3b2a37af01c8c6ca",
   "lastOpenFiles": [
+    "static/cactuscommentsmodifiedv1.css",
     "static/cactuscomments.js",
     "static/cactuscomments.css",
     "layouts/shortcodes/cactuscomments.css",
@@ -199,7 +200,6 @@
     "content/docs/Projects/Games/_index.md",
     "content/docs/Projects/Music/_index.md",
     "content/docs/Projects/_index.md",
-    "content/docs/Projects/Games",
     "content/docs/Projects/Podcasts/Tales of Nocturne/index.md",
     "content/menu/index.md",
     "content/posts/_index.md",
