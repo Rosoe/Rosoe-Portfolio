@@ -93,5 +93,5 @@ There are lots of these but let's focus on the biggest two in my data: Spotify a
 ## Closing Remarks
 All this to say, there is a lot of variance in how much you will make per stream. Depending on what part of the world your music is popular and what platforms they use to stream you could be earning 56-67x more than another song per stream. The only lesson here is if you want to maximise earning per stream then make music that appeals to the inhabitants of [Switzerland that use Apple Music](https://music.apple.com/us/playlist/top-100-switzerland/pl.bb1f5218a0f04de3877c4f9ccd63d260).
 
-## Comments v1
+## Comments v2
  {{< chat Blog2StreamingPayments >}} 
