@@ -1,6 +1,6 @@
 ---
 date: 2024-05-31
-title: How Much Money Do Music Streaming Services Pay You
+title: How Much Do Music Streaming Services Pay?
 weight: 10
 tags:
   - Music
