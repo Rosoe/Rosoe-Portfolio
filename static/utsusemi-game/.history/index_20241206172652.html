@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FFXI: Utsusemi Game!</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="status" id="status"></div>
+    <div class="battle-scene">
+        <div class="danger-meter">
+            <div class="danger-text">Danger Meter: 0/5</div>
+            <div class="danger-fill"></div>
+        </div>
+        <div class="player" id="player"></div>
+        <div class="mob" id="mob"></div>
+    </div>
+    <div class="game-over" id="gameOver">
+        <div class="game-over-content">
+            <h2>Game Over!</h2>
+            <p>You were hit 5 times in a row!</p>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <button class="restart-button" onclick="game.restart()">Try Again</button>
+        </div>
+    </div>
+    <div class="gameplay-container">
+        <div class="spell-buttons">
+            <div class="spell-button" id="ichiBtn" data-spell="ichi">Utsusemi: Ichi<div class="cooldown-overlay"></div><div class="cast-bar"><div class="cast-progress"></div></div></div>
+            <div class="spell-button" id="niBtn" data-spell="ni">Utsusemi: Ni<div class="cooldown-overlay"></div><div class="cast-bar"><div class="cast-progress"></div></div></div>
+            <div class="spell-button" id="sanBtn" data-spell="san" style="display:none;background:#E91E63">Utsusemi: San<div class="cooldown-overlay"></div><div class="cast-bar"><div class="cast-progress"></div></div></div>
+            <div class="spell-button" id="kurayamiBtn" data-spell="kurayami" style="display:none">Kurayami: Ichi<div class="cooldown-overlay"></div><div class="cast-bar"><div class="cast-progress"></div></div></div>
+            <div class="spell-button" id="hojoBtn" data-spell="hojo" style="display:none">Hojo: Ichi (4s)<div class="cooldown-overlay"></div><div class="cast-bar"><div class="cast-progress"></div></div></div>
+            <div class="spell-button" id="jubakuBtn" data-spell="jubaku" style="display:none;background:#795548">Jubaku: Ichi<div class="cooldown-overlay"></div><div class="cast-bar"><div class="cast-progress"></div></div></div>
+            <div class="spell-button" id="cancelBtn" style="background:#9C27B0">Cancel Shadows<div class="cast-bar"><div class="cast-progress"></div></div></div>
+        </div>
+        <div id="log" class="hits"></div>
+    </div>
+    <div class="auction-house" id="auctionHouse">
+        <h2>Auction House</h2>
+        <div class="shop-item">
+            <span>Emperor's Hairpin (Evasion +10)</span>
+            <button onclick="game.buyItem('hairpin', 40)">Buy - 40 gil</button>
+        </div>
+        <div class="shop-item">
+            <span>Speed Belt (+6% Haste)</span>
+            <button onclick="game.buyItem('belt', 80)">Buy - 80 gil</button>
+        </div>
+        <div class="shop-item">
+            <span>Scroll of Utsusemi: San</span>
+            <button onclick="game.buyItem('san', 140)">Buy - 140 gil</button>
+        </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/spells.js"></script>
+    <script src="js/combat.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
