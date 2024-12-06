@@ -23,6 +23,13 @@ class GameUI {
         });
     }
 
+    formatTime(seconds) {
+        const hours = Math.floor(seconds / 3600);
+        const minutes = Math.floor((seconds % 3600) / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+    }
+
     updateShadowDisplay(shadows) {
         this.elements.player.innerHTML = Array(shadows)
             .fill()
@@ -37,11 +44,9 @@ class GameUI {
 
     updateStatusDisplay(state) {
         this.elements.status.innerHTML = `
-            <div>Shadows: ${state.shadows}</div>
-            <div>Time: ${state.time.toFixed(1)}s</div>
+            <div>Time: ${this.formatTime(state.time)}</div>
+            <div>Combo: ${state.currentCombo} (${state.highestCombo})</div>
             <div>Gil: ${state.gil}</div>
-            <div>Combo: ${state.currentCombo}</div>
-            <div>Highest: ${state.highestCombo}</div>
             <div>Hits Taken: ${state.stats.taken}</div>
         `;
     }

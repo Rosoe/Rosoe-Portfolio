@@ -1,0 +1,404 @@
+:root {
+    --ff11-bg: #1a1a2e;
+    --ff11-border: #3a3a5c;
+    --ff11-highlight: #4a90e2;
+    --ff11-text: #e6e6f2;
+    --ff11-red: #ff3333;
+    --ff11-button-gradient: linear-gradient(180deg, #2d2d45 0%, #1a1a2e 100%);
+    --ff11-selected-gradient: linear-gradient(180deg, #4a90e2 0%, #2a5a8e 100%);
+    --ff11-purple-highlight: #9370DB;
+    --ff11-text-gradient: linear-gradient(180deg, #ffffff 0%, #a0a0a0 100%);
+    
+    /* Spell type colors */
+    --spell-utsusemi: #4a90e2;
+    --spell-debuff: #9c27b0;
+    --spell-cancel: #e91e63;
+}
+
+body { 
+    font-family: system-ui; 
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 70px 20px 20px;
+    min-height: 100vh;
+    background: var(--ff11-bg);
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.03) 0px,
+        rgba(255, 255, 255, 0.03) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    color: var(--ff11-text);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.battle-scene { 
+    background: #12121e;
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.03) 0px,
+        rgba(255, 255, 255, 0.03) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    border: 1px solid var(--ff11-border);
+    height: 300px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px; 
+    margin: 0 0 20px 0;
+    position: relative; 
+    border-radius: 4px;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+}
+
+.danger-meter { 
+    position: absolute; 
+    top: 10px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 200px; 
+    height: 20px; 
+    background: #12121e;
+    border: 1px solid var(--ff11-border);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+.danger-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, #ff9800, var(--ff11-red));
+    transition: width 0.3s ease;
+}
+
+.danger-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: var(--ff11-text);
+    font-size: 12px;
+    line-height: 20px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.game-over {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.game-over-content {
+    background: var(--ff11-bg);
+    border: 1px solid var(--ff11-border);
+    padding: 40px;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.restart-button {
+    background: var(--ff11-button-gradient);
+    color: var(--ff11-text);
+    border: 1px solid var(--ff11-border);
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.restart-button:hover {
+    background: var(--ff11-selected-gradient);
+}
+
+.player, .mob { 
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.player { 
+    background: var(--ff11-highlight);
+    position: relative; 
+    border: 1px solid var(--ff11-border);
+}
+
+.mob { 
+    background: var(--ff11-red);
+    transition: transform 0.5s; 
+    border: 1px solid var(--ff11-border);
+}
+
+.mob.attacking { 
+    transform: translateX(-300px); 
+}
+
+.shadow { 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(74,144,226,0.3); 
+    border-radius: 50%; 
+    animation: shadowPulse 2s infinite; 
+}
+
+.status { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+    background: var(--ff11-bg);
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.03) 0px,
+        rgba(255, 255, 255, 0.03) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    border-bottom: 1px solid var(--ff11-border);
+    padding: 10px;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.status > div {
+    text-align: center;
+    background: var(--ff11-text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.gameplay-container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.spell-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #12121e;
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.03) 0px,
+        rgba(255, 255, 255, 0.03) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    border: 1px solid var(--ff11-border);
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Base spell button style */
+.spell-button { 
+    background: var(--ff11-button-gradient);
+    color: var(--ff11-text);
+    border: 1px solid var(--ff11-border);
+    padding: 15px; 
+    border-radius: 3px; 
+    cursor: pointer; 
+    position: relative; 
+    overflow: hidden; 
+    margin: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    transition: all 0.2s ease;
+}
+
+/* Utsusemi spells */
+.spell-button[data-spell="ichi"],
+.spell-button[data-spell="ni"],
+.spell-button[data-spell="san"] {
+    background: linear-gradient(180deg, #2a4a8e 0%, #1a2a4e 100%);
+    border-color: var(--spell-utsusemi);
+}
+
+/* Debuff spells */
+.spell-button[data-spell="kurayami"],
+.spell-button[data-spell="hojo"],
+.spell-button[data-spell="jubaku"] {
+    background: linear-gradient(180deg, #6a1b9a 0%, #4a0d6a 100%);
+    border-color: var(--spell-debuff);
+}
+
+/* Cancel button */
+#cancelBtn {
+    background: linear-gradient(180deg, #c2185b 0%, #880e4f 100%);
+    border-color: var(--spell-cancel);
+}
+
+.spell-button:hover {
+    filter: brightness(1.2);
+}
+
+.spell-button:active {
+    transform: translateY(1px);
+}
+
+.cast-bar { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 4px; 
+    background: #12121e;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.cast-progress { 
+    width: 0%; 
+    height: 100%; 
+    background: var(--ff11-purple-highlight);
+    box-shadow: 0 0 5px var(--ff11-purple-highlight);
+}
+
+.spell-button.casting { 
+    filter: brightness(0.7);
+    cursor: not-allowed; 
+}
+
+.spell-button.on-cooldown { 
+    filter: brightness(0.5);
+    cursor: not-allowed; 
+}
+
+.cooldown-overlay { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0,0,0,0.7); 
+    border-radius: 3px; 
+    display: none; 
+    align-items: center; 
+    justify-content: center; 
+    color: var(--ff11-text);
+    font-size: 24px; 
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.hits { 
+    position: sticky;
+    top: 70px;
+    height: 100%;
+    max-height: 400px; /* Match approximate height of spell buttons */
+    overflow-y: auto; 
+    background: #12121e;
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.03) 0px,
+        rgba(255, 255, 255, 0.03) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    border: 1px solid var(--ff11-border);
+    color: var(--ff11-text);
+    padding: 15px; 
+    border-radius: 4px; 
+    font-family: monospace;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+}
+
+.gil-gain { 
+    color: #FFD700; 
+    font-weight: bold; 
+    text-shadow: 0 0 5px rgba(255,215,0,0.5);
+}
+
+.auction-house { 
+    display: none; 
+    background: #12121e;
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.03) 0px,
+        rgba(255, 255, 255, 0.03) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    border: 1px solid var(--ff11-border);
+    color: var(--ff11-text);
+    padding: 20px; 
+    margin: 20px 0; 
+    border-radius: 4px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+}
+
+.shop-item { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+    margin: 5px 0; 
+    background: var(--ff11-button-gradient);
+    border: 1px solid var(--ff11-border);
+    border-radius: 3px; 
+}
+
+.shop-item button { 
+    background: var(--ff11-button-gradient);
+    color: var(--ff11-text);
+    border: 1px solid var(--ff11-border);
+    padding: 8px 16px; 
+    border-radius: 3px; 
+    cursor: pointer; 
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.shop-item button:hover {
+    background: var(--ff11-selected-gradient);
+    border-color: var(--ff11-highlight);
+}
+
+.shop-item button:disabled { 
+    background: #1a1a2e;
+    color: #666; 
+    cursor: not-allowed; 
+    border-color: var(--ff11-border);
+}
+
+.combo-text { 
+    color: var(--ff11-purple-highlight);
+    font-weight: bold; 
+    text-shadow: 0 0 5px rgba(147,112,219,0.5);
+}
+
+@keyframes shadowPulse { 
+    50% { 
+        transform: scale(1.2); 
+        opacity: 0.2; 
+    } 
+}
+
+@keyframes damageFlash { 
+    0%, 100% { 
+        background: #12121e;
+    } 
+    50% { 
+        background: var(--ff11-red);
+    } 
+}
