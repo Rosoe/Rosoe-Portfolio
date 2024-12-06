@@ -12,9 +12,6 @@ class Game {
 
         // Bind event handlers
         this.bindEvents();
-
-        // Initialize UI immediately
-        this.updateUI();
     }
 
     bindEvents() {

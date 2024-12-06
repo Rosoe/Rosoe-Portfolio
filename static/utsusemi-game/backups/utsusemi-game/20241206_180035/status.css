@@ -1,0 +1,28 @@
+.status { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+    background: rgba(18, 18, 30, 0.95);
+    border-bottom: 1px solid var(--ff11-border);
+    padding: 6px 10px;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.status > div {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 
+        0 0 3px rgba(255,255,255,0.5),
+        0 0 5px rgba(255,255,255,0.3),
+        1px 1px 3px rgba(0,0,0,0.9);
+    font-family: "Arial", sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
