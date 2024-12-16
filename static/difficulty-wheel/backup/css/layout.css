@@ -1,0 +1,32 @@
+.game-name {
+    padding: 0.25rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 1;
+}
+
+.game-name input {
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        grid-template-columns: 65fr 35fr;
+    }
+}
+
+.wheel-container, .controls-container {
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}

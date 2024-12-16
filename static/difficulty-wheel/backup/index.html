@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Difficulty Wheel</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-name">
+            <input type="text" id="gameName" value="Game Name" placeholder="Game Name">
+        </div>
+        <div class="main-content">
+            <div class="wheel-container">
+                <svg id="wheel" viewBox="0 0 800 800"></svg>
+            </div>
+            <div class="controls-container">
+                <div id="difficultyControls"></div>
+            </div>
+        </div>
+    </div>
+    <script src="categories.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/wheel-renderer.js"></script>
+    <script src="js/controls.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
