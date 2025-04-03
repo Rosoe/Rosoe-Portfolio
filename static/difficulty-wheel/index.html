@@ -21,8 +21,9 @@
     <div class="container">
         <div class="menu-bar">
             <div class="menu-group">
-                <div class="game-name">
+                <div class="game-info">
                     <input type="text" id="gameName" value="Game Name" placeholder="Game Name">
+                    <input type="text" id="gameContext" value="" placeholder="Game Context/Goal">
                 </div>
                 <button id="exportPdfBtn" class="menu-button">Export as PDF</button>
                 <div class="dropdown">
@@ -33,13 +34,14 @@
                         <button id="removeCategoryBtn">Remove Category</button>
                         <button id="exportCategoriesBtn">Export Categories</button>
                         <button id="importCategoriesBtn">Import Categories</button>
-                        <button id="resetCategoriesBtn">Reset Categories</button>
                         <hr>
                         <button id="exportValuesBtn">Export Values</button>
                         <button id="importValuesBtn">Import Values</button>
                     </div>
                 </div>
-                <button id="resetBtn" class="menu-button">Reset</button>
+                <button id="resetCategoriesBtn" class="menu-button">Reset Categories</button>
+                <button id="resetBtn" class="menu-button">Reset Values</button>
+                <button id="toggleSubcategoriesBtn" class="menu-button">Hide Subcategories</button>
             </div>
         </div>
         <div class="main-content">
@@ -51,7 +53,7 @@
             </div>
         </div>
     </div>
-    <script src="categories.js"></script>
+    <script src="categories.js?v=1"></script>
     <script src="js/utils.js"></script>
     <script src="js/state.js"></script>
     <script src="js/wheel/wheel-svg.js"></script>
